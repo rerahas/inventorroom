@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <script async src="https://fundingchoicesmessages.google.com/i/pub-5271863438795471?ers=1" nonce="ToSOvJMN1nqZFl7u6fbQUA"></script><script nonce="ToSOvJMN1nqZFl7u6fbQUA">(function() {function signalGooglefcPresent() {if (!window.frames['googlefcPresent']) {if (document.body) {const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe);} else {setTimeout(signalGooglefcPresent, 0);}}}signalGooglefcPresent();})();</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4JN2T7YSKP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-4JN2T7YSKP');
+  </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Tyoe" content="text/javascript" />
+<title>構造解析 - Inventorの部屋</title>
+<meta name="Description" content="Autodesk Inventor（オートデスク インベンター）の使い方 - 構造解析" />
+<meta name="Keywords" content="Autodesk,inventor,オートデスク,インベンター,使い方,3d,cad,構造解析" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="container">
+	<div id="header">
+<h1>構造解析 - Inventorの部屋</h1>
+		<a href="index.html" title="Autodesk Inventor（オートデスク インベンター）の使い方 - トップページへ"><img src="images/logo.png" width="200" height="48" alt="Autodesk Inventor（オートデスク インベンター）の使い方 - Inventorの部屋" id="logo"></a>
+
+
+		<h2>Autodesk Inventor（オートデスク インベンター）の使い方をわかりやすく解説　　　<span class="font7 color4">＜バージョン2014の使い方は<a href="../index.html">こちら</a>＞</span></h2>
+		<p>当サイト適用バージョン　Autodesk Inventor Professional 2008</p>
+		<!-- /header --></div>
+	<ul class="nav">
+		<li> <a href="index.html">トップページ</a>
+		<li> <a href="syoho.html">初心者講座</a>
+	<li> <a href="yougo.html">用語集</a>
+	</ul>
+	<div id="content">
+		<div id="post">
+<div class="breadcrumb"><a href="index.html">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;構造解析</div>
+			<div class="post_af"><a href="http://pt.afl.rakuten.co.jp/c/03995d40.f26b2bf7/?url=http%3a%2f%2fitem.rakuten.co.jp%2fangfa%2f648226%2f&scid=af_ich_link_urltxt_pc" target="_blank">★薬用スカルプD スカルプ シャンプー オイリー[脂性肌用]</a>
+</div>
+			<h3>構造解析</h3>
+		<p class="summary">パーツへの荷重に対するたわみなどがシミュレーション出来ます。<br />
+		ここでは幅10mm高さ10mm長さ100mm、材料SS400の片持ちはりに集中荷重がかかる場合を解説します。</p>
+
+			<table id="cattable">
+				<tr>
+					<td colspan="2"><ol class="sub">
+				<li><a href="#structuralanalysis1">拘束</a></li>
+				<li><a href="#structuralanalysis2">荷重</a></li>
+				<li><a href="#structuralanalysis3">解析の実行</a></li>
+				<li><a href="#structuralanalysis4">レポートの作成</a></li>
+				  </ol></td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4 id="structuralanalysis1">１．拘束</h4>
+						<p>パーツを拘束して固定します。</p></td>
+				</tr>
+				<tr>
+					<td colspan="2"><div class="how">操作方法</div></td>
+				</tr>
+				<tr>
+					<td><img src="images/img/structural1.gif" alt="構造解析" width="228" height="163"><br />
+					  <img src="images/img/structural2.gif" width="372" height="212" alt="構造解析" /><br /></td>
+					<td>
+					  <ol>
+							<li><a href="yougo.html#parts">パーツ<span>部品</span></a>を新規作成するか既存のファイルを開きます。<br />
+						  ここでは幅10mm高さ10mm長さ100mmを作成。</li>
+							<li>「<a href="gamensetumei.html">メニューバー</a>」から[アプリケーション] - [構造解析]を選択。
+							  <br />
+							  パーツに材料が設定されていない場合はここで材料を選択します。
+					  </ol></td>
+				</tr>
+				<tr>
+				  <td colspan="2" align="center"><img src="images/arrow057_10.png" width="120" height="30" alt="下矢印" /></td>
+			  </tr>
+				<tr>
+				  <td><img src="images/img/structural3.gif" width="400" height="299" alt="構造解析" /></td>
+				  <td><ol>
+				  <li value="3">「構造解析<a href="gamensetumei.html">パネル<span>押し出しや回転などのツールが表示される部分</span></a>」から[固定拘束設定<span></span>]を選択。
+							<li>任意の面やエッジを選択。<br />
+							  ここでは片持ちはりなので端面の片側を選択して「ＯＫ」をクリック。</ol></td>
+			  </tr>
+				<tr>
+					<td colspan="2"><h4 id="structuralanalysis2">２．荷重</h4>
+						<p>荷重の位置と大きさを設定します。</p></td>
+				</tr>
+				<tr>
+					<td colspan="2"><div class="how">操作方法</div></td>
+				</tr>
+				<tr>
+					<td><img src="images/img/structural4.gif" alt="構造解析" width="400" height="449"></td>
+					<td><ol>
+					<li>「構造解析<a href="gamensetumei.html">パネル<span>押し出しや回転などのツールが表示される部分</span></a>」から[荷重<span></span>]を選択。</li>
+							<li>任意の面やエッジを選択。<br />
+ここでは集中荷重なので固定拘束した反対側のエッジを選択。</li>
+					  <li>荷重の<a href="yougo.html#dialogbox">ダイアログボックス<span>ユーザー（利用者）に情報を提示し設定を促すウインドウ。ダイアログは対話の意味。</span></a>から「荷重方向を選択及び反転」を選択し、方向を決める。</li>
+							<li>大きさに数値を入力して「ＯＫ」をクリック。<br />
+					  </li>
+						</ol></td>
+				</tr>
+				<tr>
+				  <td colspan="2"><h4 id="structuralanalysis3">３．解析の実行
+                  </h4>
+			      <p>解析を実行します。</p></td>
+			  </tr>
+				<tr>
+					<td><img src="images/img/structural5.gif" alt="構造解析" width="400" height="315"></td>
+					<td><ol>
+					  <li>「構造解析<a href="gamensetumei.html">パネル<span>押し出しや回転などのツールが表示される部分</span></a>」から[構造解析アップデート<span></span>]を選択すると自動的に解析を実行。
+				      <li><a href="yougo.html#browser">ブラウザ<span>パーツ、アセンブリ、図面内の各要素（フィーチャや拘束状態、部品構成等）をツリー状に表したもの</span></a>
+				  で「結果」の「変形」をダブルクリックすると最大たわみなどを確認できます。</ol></td>
+				</tr>
+				<tr>
+				  <td colspan="2"><h4 id="structuralanalysis4">４．レポートの作成</h4>
+                  <p>解析結果のレポートを作成します。</p></td>
+			  </tr>
+				<tr>
+				  <td><img src="images/img/structural6.gif" alt="構造解析" width="400" height="350
+                  " /></td>
+				  <td><ol>
+				    <li>「構造解析<a href="gamensetumei.html">パネル<span>押し出しや回転などのツールが表示される部分</span></a>」から[レポート]を選択すると自動的にレポートを<a href="http://ja.wikipedia.org/wiki/HTML" target="_blank">HTML</a>型式で作成します。 </li>
+			      </ol></td>
+			  </tr>
+			</table>
+			<!--/post-->
+	  </div>
+
+		<!--/content-->
+	</div>
+	<div id="sidebar">
+		<div id="menu">
+			<h3>コンテンツ</h3>
+<ul>
+		  <li><a href="sckech.html">スケッチ</a></li>
+		  <li><a href="feature.html">フィーチャ</a></li>
+		  <li><a href="sagyoufeature.html">作業フィーチャ</a></li>
+		<li><a href="assembly.html">アセンブリ</a></li>
+		<li><a href="restraint.html">拘束</a></li>
+		<li><a href="zumen.html">図面</a></li>
+		  <li><a href="project.html">プロジェクト</a></li>
+		  <li><a href="imate.html">iMate</a></li>
+		  <li><a href="ipart.html">iPart</a></li>
+		  <li><a href="ifeature.html">iFeature</a></li>
+		  <li><a href="aprioption.html">アプリケーションオプション</a></li>
+		  <li><a href="customize.html">カスタマイズ</a></li>
+		  <li><a href="style.html">スタイル</a></li>
+		  <li><a href="iproperty.html">iProperty</a></li>
+		  <li><a class="next" href="tube.html">チューブ＆パイプ配管</a></li>
+		  <li><a href="frame.html">フレームジェネレータ</a></li>
+		  <li><a href="pack.html">Pack &amp; Go</a></li>
+		  <li><a href="representation.html">リプレゼンテーション</a></li>
+		  <li><a href="inventorstudio.html">Inventor Studio</a></li>
+		  <li><a href="presentation.html">分解プレゼンテーション</a></li>
+		  <li><a class="current" href="structuralanalysis.html">構造解析</a><ol><li><a href="#structuralanalysis1">拘束</a></li>
+			<li><a href="#structuralanalysis2">荷重</a></li>
+			<li><a href="#structuralanalysis3">解析の実行</a></li>
+			<li><a href="#structuralanalysis4">レポートの作成</a></li>
+			</ol>
+	    </li>
+		  <li> </li>
+		</ul>
+		  <h3>初心者講座</h3>
+		  <ul>
+			  <li><a href="syoho.html">アセンブリ図面作成手順</a></li>
+			  <li><a href="gamensetumei.html">画面説明</a></li>
+			  <li><a href="gaibufile.html">外部ファイルのインポート</a></li>
+			  <li><a class="last" href="hyouji.html">表示関係</a></li>
+		  </ul>
+
+
+<h3>用語集</h3>
+<ul>
+				<li><a href="yougo.html">用語集</a></li>
+		  </ul>
+</div><br />
+
+		<!--/sidebar--></div>
+	<div id="foot">
+		<div id="footer">
+			<div id="footer_inner">
+				<div id="footermenu">
+
+					<!--/footmenu--></div>
+				<p>Copyright(C) 2008 Inventor Room All Rights Reserved.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="js/scrolltopcontrol.js"></script>  <script src="js/localStorage.js"></script>
+</body>
+</html>

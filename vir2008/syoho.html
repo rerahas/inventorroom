@@ -1,0 +1,488 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <script async src="https://fundingchoicesmessages.google.com/i/pub-5271863438795471?ers=1" nonce="ToSOvJMN1nqZFl7u6fbQUA"></script><script nonce="ToSOvJMN1nqZFl7u6fbQUA">(function() {function signalGooglefcPresent() {if (!window.frames['googlefcPresent']) {if (document.body) {const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe);} else {setTimeout(signalGooglefcPresent, 0);}}}signalGooglefcPresent();})();</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4JN2T7YSKP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-4JN2T7YSKP');
+  </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Tyoe" content="text/javascript" />
+<title>初心者講座_アセンブリ図面作成手順 - Inventorの部屋</title>
+<meta name="Description" content="Autodesk Inventor（オートデスク インベンター）の使い方 - 初心者講座_アセンブリ図面作成手順" />
+<meta name="Keywords" content="Autodesk,inventor,オートデスク,インベンター,使い方,3d,cad,初心者講座,アセンブリ図面,作成,手順" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="container">
+	<div id="header">
+<h1>初心者講座_アセンブリ図面作成手順 - Inventorの部屋</h1>
+		<a href="index.html" title="Autodesk Inventor（オートデスク インベンター）の使い方 - トップページへ"><img src="images/logo.png" width="200" height="48" alt="Autodesk Inventor（オートデスク インベンター）の使い方 - Inventorの部屋" id="logo"></a>
+
+
+		<h2>Autodesk Inventor（オートデスク インベンター）の使い方をわかりやすく解説　　　<span class="font7 color4">＜バージョン2014の使い方は<a href="../index.html">こちら</a>＞</span></h2>
+		<p>当サイト適用バージョン　Autodesk Inventor Professional 2008</p>
+		<!-- /header --></div>
+	<ul class="nav">
+		<li> <a href="index.html">トップページ</a>
+		<li> <a href="syoho.html">初心者講座</a>
+	<li> <a href="yougo.html">用語集</a>
+	</ul>
+	<div id="content">
+		<div id="post">
+<div class="breadcrumb"><a href="index.html">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;初心者講座_アセンブリ図面作成手順</div>
+			<div class="post_af"><a href="http://hb.afl.rakuten.co.jp/hgc/0f1b3003.c59327e3.0f1b3004.e1f7e1c3/?pc=http%3a%2f%2fitem.rakuten.co.jp%2fnewtimes%2f10006212%2f%3fscid%3daf_ich_link_txt&m=http%3a%2f%2fm.rakuten.co.jp%2fnewtimes%2fi%2f10006212%2f" target="_blank">【新品・送料無料】[Lenovo/レノボ 76971JJ+20V液晶0561JP1]</a></div>
+			<h3>初心者講座_アセンブリ図面作成手順</h3>
+			<p class="summary">ここでは初めてInventorを使って3D図面を書く時のとっかかりとして、<a href="yougo.html#assembly">アセンブリ</a>（組立）図面を作成するまでの手順を紹介します。</p>
+			<div class="sousa">※キーボードショートカットは独自に割り当てた（変更した）キーも含まれます。&nbsp;<a href="customize.html#shortcut">ショートカットキー一覧</a></div>
+			<table id="cattable">
+				<tr>
+					<td colspan="2"><ol class="sub"><li>
+				<a href="#sinkiproject">新規プロジェクトを作成する</a></li><li>
+				<a href="#sinkifile">新規ファイルを開く</a></li><li>
+				<a href="#asenburikankyou">アセンブリ環境に入る
+</a></li>
+<li><a href="#componento">コンポーネントを作成する</a></li>
+<li><a href="#sckechsakusei">スケッチを作成する</a></li><li>
+<a href="#3jigen">3D図面を作成する
+</a></li><li>
+<a href="#anawoakeru">穴をあける</a></li><li>
+<a href="#atarasiipart">新しいパーツを作成する</a></li><li>
+<a href="#parthaiti">パーツを配置する
+</a></li><li>
+<a href="#partkumitate">パーツを組み立てる
+</a></li></ol></td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4 id="sinkiproject">１．新規プロジェクトを作成する</h4>
+						<p>通常、設計をする際にはその設備や治具に名前（<a href="yougo.html#project">プロジェクト<span>設計全体を管理（ファイル間のリンクなど）するもの。企画、計画して目標を達成させる。</span></a>名）をつけて各部品等を同じフォルダに保存します。</p></td>
+				</tr>
+				<tr>
+					<td colspan="2"><div class="how">操作方法</div></td>
+				</tr>
+				<tr>
+					<td><img src="images/img/syoho0.gif" width="400" height="344" alt="プロジェクト"></td>
+					<td><ol>
+						<li>[ファイル] - [プロジェクト]を選択。<br />
+							※この時ファイルは何も開いていない事</li>
+					</ol></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><img src="images/arrow057_10.png" width="120" height="30" alt="下矢印" /></td>
+				</tr>
+				<tr>
+					<td><img src="images/img/syoho1.gif" width="400" height="334" alt="シングルユーザープロジェクト"></td>
+					<td><ol>
+						<li value="2">[新規作成]を選択。</li>
+						<li> プロジェクトウィザードの<a href="yougo.html#dialogbox">ダイアログボックス<span>ユーザー（利用者）に情報を提示し設定を促すウインドウ。ダイアログは対話の意味。</span></a>が開いたら、ここでは新規シングルユーザープロジェクトを選択し「次へ」をクリック。</li>
+					</ol></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><img src="images/arrow057_10.png" width="120" height="30" alt="下矢印" /></td>
+				</tr>
+				<tr>
+					<td><img src="images/img/syoho2.gif" width="400" height="276" alt="プロジェクト名"></td>
+					<td><ol>
+						<li value="4">フォルダ（あらかじめ作成しておいたフォルダを選択するかここで新規作成する）を指定して任意の名前をつけて「次へ」をクリック。</li>
+					</ol></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><img src="images/arrow057_10.png" width="120" height="30" alt="下矢印" /></td>
+				</tr>
+				<tr>
+					<td><img src="images/img/syoho3.gif" width="400" height="146" alt="プロジェクトのダイアログボックス"></td>
+					<td><ol>
+						<li value="5"><a href="project.html">ライブラリ<span>標準部品（市販品など）を置いておく場所。図書館、図書室。</span></a>を選択では何もせずに「終了」をクリック。</li>
+						<li> プロジェクトのダイアログボックスで作成したプロジェクトを選択してダブルクリックするか[適用]をクリックして
+							[完了]をクリック。</li>
+					</ol></td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4 id="sinkifile">２．新規ファイルを開く</h4>
+						<p>3D図面を作成する為に新規ファイルを開きます。</p></td>
+				</tr>
+				<tr>
+					<td colspan="2"><div class="how">操作方法</div></td>
+				</tr>
+				<tr>
+					<td><img src="images/img/syoho4.gif" width="400" height="361" alt="ファイルの新規作成"></td>
+					<td>		<ol>
+							<li><a href="customize.html#shortcut" class="tooltips">[ファイル] - [新規作成]<span>キーボードショートカット<br />
+						Ctrl+N</span></a>
+				を選択。<br />
+								※又は新規作成アイコンをクリック</li>
+					</ol></td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4 id="asenburikankyou">３．アセンブリ環境に入る（組立図を作成する場所）</h4>
+						<p><a href="yougo.html#assembly">アセンブリ<span>複数のパーツを集めて組み立てたもの。機械の組立。</span></a>を作成する為のファイルを開きます。</p></td>
+				</tr>
+				<tr>
+					<td colspan="2"><div class="how">操作方法</div></td>
+				</tr>
+				<tr>
+					<td><img src="images/img/syoho5.gif" width="400" height="314" alt="新規ファイルのダイアログボックス"></td>
+					<td><ol>
+						<li>新規ファイルの<a href="yougo.html#dialogbox">ダイアログボックス<span>ユーザー（利用者）に情報を提示し設定を促すウインドウ。ダイアログは対話の意味。</span></a>が開いたら&quot;Standard.iam&quot;を選択してダブルクリック。</li>
+					</ol></td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4 id="componento">４．コンポーネントを作成する</h4>
+						<p>3D図面を作成していきます。</p></td>
+				</tr>
+				<tr>
+					<td colspan="2"><div class="how">操作方法</div></td>
+				</tr>
+				<tr>
+					<td><img src="images/img/syoho6_1.gif" alt="コンポーネントを作成する" width="226" height="148" /><br />
+<img src="images/img/syoho6.gif" width="400" height="210" alt="インプレイスコンポーネント作成"></td>
+					<td>
+						<ol>
+							<li><a href="customize.html#shortcut" class="tooltips">[挿入] - [コンポーネント作成]<span>キーボードショートカット<br />
+								N</span></a>
+
+						を選択。</li>
+							<li><a href="yougo.html#inplace">インプレイス<span>アセンブリ環境の中で直接パーツなどを編集すること。</span></a>コンポーネント作成の<a href="yougo.html#dialogbox">ダイアログボックス<span>ユーザー（利用者）に情報を提示し設定を促すウインドウ。ダイアログは対話の意味。</span></a>スが開いたら新しい<a href="yougo.html#component">コンポーネント<span>アセンブリ内のパーツやサブアセンブリ。構成要素、構成部品。</span></a>名（ここでは&quot;001&quot;）を入力。</li>
+							<li><a href="yougo.html#template">テンプレート<span>パーツやアセンブリ、図面などを作成する時に元になるファイル。表計算やデータベース用ソフトのサンプル集 。</span></a>は&quot;Standard.ipt&quot;を選択。</li>
+							<li>								新しいファイルの場所は最初に作成した<a href="yougo.html#project">プロジェクト<span>設計全体を管理（ファイル間のリンクなど）するもの。企画、計画して目標を達成させる。</span></a>の場所を確認し「ＯＫ」をクリック。</li>
+							<li> 部品を作成する為のスケッチ平面（2D図面）を選択をするのでここでは<a href="gamensetumei.html">グラフィックスウインドウ</a>の任意の場所をクリックするとスケッチ環境（2D図面作成）に入ります。</li>
+					</ol></td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4 id="sckechsakusei">５．スケッチ（2D図面）を作成する</h4>
+						<p>3D図面を作成する為にまずスケッチ（2D図面）で基準の形を決めて寸法を入力します。<br />
+    ここでは縦５０ｍｍ、横１００ｍｍの長方形を作成。</p></td>
+				</tr>
+				<tr>
+					<td colspan="2"><div class="how">操作方法</div></td>
+				</tr>
+				<tr>
+					<td><img src="images/img/syoho7.gif" width="400" height="304" alt="スケッチ"></td>
+					<td><ol>
+						<li>「2Dスケッチ<a href="gamensetumei.html">パネル<span>押し出しや回転などのツールが表示される部分</span></a>」から[<a href="customize.html#shortcut" class="tooltips">2点長方形<span>キーボードショートカット<br />
+K</span></a>]を選択して任意の場所をクリック。</li>
+						<li> マウスを移動して適当な場所で再度クリック。<br />
+							</li>
+					</ol><div class="ponit">
+							<img src="images/ico05-005.png" width="100" height="16" alt="ワンポイント" /><br />
+ここでは任意の場所に長方形を作成しましたが、原点を利用した方が効率よく図面を作成出来ます。 <a href="sckech.html#sckech">スケッチ</a>のページ参照</div></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><img src="images/arrow057_10.png" width="120" height="30" alt="下矢印" /></td>
+				</tr>
+				<tr>
+					<td><img src="images/img/syoho8.gif" width="400" height="175" alt="スケッチ"></td>
+					<td><ol>
+						<li value="3">「2Dスケッチパネル」から[<a href="customize.html#shortcut" class="tooltips">一般寸法<span>キーボードショートカット<br />
+D</span></a>]を選択。</li>
+						<li> 縦、横それぞれの線を選択して寸法を入力。<br />
+							これでスケッチは終了。</li>
+					</ol></td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4 id="3jigen">６．3D図面を作成する</h4>
+						<p>3D図面を作成する為に<a href="yougo.html#parts">パーツ<span>部品</span></a>環境に入ります。<br />
+    ここでは高さ10mmの長方体を作成。</p></td>
+				</tr>
+				<tr>
+					<td colspan="2"><div class="how">操作方法</div></td>
+				</tr>
+				<tr>
+					<td><img src="images/img/syoho9.gif" width="400" height="233" alt="パーツに戻る"></td>
+					<td><ol>
+						<li><img src="images/back.gif" width="38" height="12" alt="戻る" class="imagea" />をクリックするとパーツ環境に入ります。</li>
+					</ol></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><img src="images/arrow057_10.png" width="120" height="30" alt="下矢印" /></td>
+				</tr>
+				<tr>
+					<td><img src="images/img/syoho10.gif" width="400" height="305" alt="押し出し"></td>
+					<td><ol>
+						<li value="2">「パーツフィーチャパネル」から[<a href="customize.html#shortcut" class="tooltips">押し出し<span>キーボードショートカット<br />
+E</span></a>]を選択し、押し出しの				<a href="yougo.html#dialogbox">ダイアログボックス<span>ユーザー（利用者）に情報を提示し設定を促すウインドウ。ダイアログは対話の意味。</span></a>が開いたら&quot;結合&quot;が選択されていることを確認し、範囲で&quot;距離&quot;を選択&quot;10&quot;を入力し「ＯＫ」をクリック。<br />
+
+    これで3D図面は完成。</li>
+					</ol>		<div class="ponit">
+					<img src="images/ico05-005.png" width="100" height="16" alt="ワンポイント" /><br />
+通常、押し出し面が１つしかない時はその面が自動的に選択されていますが、押し出し面が複数ある時はプロファイルをクリックして、押し出し面を選択します。</div></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><img src="images/arrow057_10.png" width="120" height="30" alt="下矢印" /></td>
+				</tr>
+				<tr>
+					<td><img src="images/img/syoho11.gif" width="400" height="316
+					" alt="等角図"></td>
+					<td><p>＜キーボードの&quot;F6&quot;を押すと等角図になります＞</p></td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4 id="anawoakeru">７．穴をあける</h4>
+						<p>作成した長方形に穴をあけてみましょう。<br />
+    ここでは任意の位置に直径10mmの穴を作成。</p></td>
+				</tr>
+				<tr>
+					<td colspan="2"><div class="how">操作方法</div></td>
+				</tr>
+				<tr>
+					<td><img src="images/img/syoho12.gif" width="400" height="387" alt="新しいスケッチ"></td>
+					<td><ol>
+						<li>上面をクリックして色が変わったら右クリックで［新しいスケッチ］をクリック。</li>
+					</ol><div class="ponit"><img src="images/ico05-005.png" width="100" height="16" alt="ワンポイント" /><br />
+[ツール] - [アプリケーションオプション] - [スケッチタブ]の中の&quot;<a href="aprioption.html#apurisckech">スケッチ作成時に平行ビュー</a>"にチェックを入れておくと「新しいスケッチ」を作成する時自動的に平行になります。<br />
+<br />
+					その他の平行にする方法として&quot;ビュー正面&quot;アイコンをクリックするか、キーボードの&quot;PageUp&quot;を押した後スケッチする面をクリックすることによって平行になります。</div></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><img src="images/arrow057_10.png" width="120" height="30" alt="下矢印" /></td>
+				</tr>
+				<tr>
+					<td><img src="images/img/syoho13.gif" width="400" height="234" alt="点、中心点"></td>
+					<td><ol>
+						<li>「2Dスケッチパネル」から[<a href="customize.html#shortcut" class="tooltips">点、中心点<span>キーボードショートカット<br />
+Y</span></a>]をクリックして穴を開けたい面の任意の位置をクリック。</li>
+					</ol></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><img src="images/arrow057_10.png" width="120" height="30" alt="下矢印" /></td>
+				</tr>
+				<tr>
+					<td><img src="images/img/syoho14.gif" width="400" height="303" alt="一般寸法"></td>
+					<td><ol>
+						<li value="2">「2Dスケッチパネル」から[<a href="customize.html#shortcut" class="tooltips">一般寸法<span>キーボードショートカット<br />
+D</span></a>]をクリック。</li>
+						<li> 縦、横それぞれの線と点を選択して寸法を入力。</li>
+					</ol></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><img src="images/arrow057_10.png" width="120" height="30" alt="下矢印" /></td>
+				</tr>
+				<tr>
+					<td><img src="images/img/syoho15.gif" width="400" height="310" alt="穴"></td>
+					<td><ol>
+						<li value="4">パーツフィーチャパネルから[<a href="customize.html#shortcut" class="tooltips">穴<span>キーボードショートカット<br />
+H</span></a>]を選択し、穴の<a href="yougo.html#dialogbox">ダイアログボックス<span>ユーザー（利用者）に情報を提示し設定を促すウインドウ。ダイアログは対話の意味。</span></a>が開いたら
+    終端で&quot;貫通&quot;を選択し、直径に&quot;10&quot;を入力して「ＯＫ」をクリック。</li>
+					</ol></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><img src="images/arrow057_10.png" width="120" height="30" alt="下矢印" /></td>
+				</tr>
+				<tr>
+					<td><img src="images/img/syoho16.gif" width="400" height="220" alt="穴"></td>
+					<td><p>＜穴が開きました＞</p></td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4 id="atarasiipart">８．新しいパーツを作成する</h4>
+						<p>新しい<a href="yougo.html#parts">パーツ<span>部品</span></a>（ここでは円柱）を作成する為に<a href="yougo.html#assembly">アセンブリ<span>複数のパーツを集めて組み立てたもの。機械の組立。</span></a>環境に戻ります。<br />
+    ここでは直径10mm、高さ50mmの円柱を作成。</p></td>
+				</tr>
+				<tr>
+					<td colspan="2"><div class="how">操作方法</div></td>
+				</tr>
+				<tr>
+					<td><img src="images/img/syoho17.gif" width="400" height="154" alt="アセンブリに戻る"></td>
+					<td><ol>
+						<li><img src="images/back.gif" width="38" height="12" alt="戻る" class="imagea" />をクリックしてアセンブリ環境に戻ります。</li></ol></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><img src="images/arrow057_10.png" width="120" height="30" alt="下矢印" /></td>
+				</tr>
+				<tr>
+					<td><img src="images/img/syoho18.gif" width="400" height="260" alt="中心点円"></td>
+					<td><ol>
+						<li value="2">&quot;<a href="#componento">４．コンポーネントを作成する</a>&quot;を参考にして新しいファイル（ここでは<a href="yougo.html#component">コンポーネント<span>アセンブリ内のパーツやサブアセンブリ。構成要素、構成部品。</span></a>名に&quot;002&quot;を入力）を作成し、画面の任意の場所をクリックしてスケッチ環境に入ります。</li>
+						<li>「2Dスケッチパネル」から[<a href="customize.html#shortcut" class="tooltips">中心点円<span>キーボードショートカット<br />
+C</span></a>]をクリックして<a href="aprioption.html#genten">原点</a>をクリック。</li>
+						<li> マウスを移動して適当な場所で再度クリック。</li>
+					</ol></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><img src="images/arrow057_10.png" width="120" height="30" alt="下矢印" /></td>
+				</tr>
+				<tr>
+					<td><img src="images/img/syoho19.gif" width="400" height="250" alt="円柱" class="border"></td>
+					<td><ol>
+						<li value="5">
+							「2Dスケッチパネル」から[
+<a href="customize.html#shortcut" class="tooltips">一般寸法<span>キーボードショートカット<br />
+							D</span></a>]を選択。
+						<li>円を選択して寸法&quot;10&quot;を入力。
+						<li>
+					&quot;<a href="#3jigen">６．3D図面を作成する</a>&quot;を参考に3D図面を作成。</li>
+					</ol>
+						</td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4 id="parthaiti">９．パーツを配置する</h4>
+						<p><a href="yougo.html#parts">パーツ<span>部品</span></a>を配置する為に<a href="yougo.html#assembly">アセンブリ<span>複数のパーツを集めて組み立てたもの。機械の組立。</span></a>環境に戻り、ここまで作成した２個のパーツとアセンブリを保存します。<br />
+    ここでは&quot;01&quot;をひとつ配置。</p></td>
+				</tr>
+				<tr>
+					<td colspan="2"><div class="how">操作方法</div></td>
+				</tr>
+				<tr>
+					<td><img src="images/img/syoho20.gif" width="400" height="220" alt="保存"></td>
+					<td><ol>
+						<li><img src="images/back.gif" width="38" height="12" alt="戻る" class="imagea" />をクリックしてアセンブリ環境に戻ります。</li>
+						<li> 保存アイコンをクリックするか、[ファイル] - 「保存」をクリック。</li>
+						<li> 名前を付けて保存<a href="yougo.html#dialogbox">ダイアログボックス<span>ユーザー（利用者）に情報を提示し設定を促すウインドウ。ダイアログは対話の意味。</span></a>が開いたら任意のファイル名をつけて「保存」をクリック。</li>
+						<li> 保存ダイアログボックスが開いたら「すべてはい」をクリックして「保存」をクリック。</li>
+					</ol></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><img src="images/arrow057_10.png" width="120" height="30" alt="下矢印" /></td>
+				</tr>
+				<tr>
+					<td><img src="images/img/syoho21.gif" width="400" height="213" alt="Inventor 配置"></td>
+					<td><ol>
+						<li value="5"><a href="customize.html#shortcut" class="tooltips">[挿入] - [コンポーネント配置]<span>キーボードショートカット<br />
+								P</span></a>
+
+						を選択し、&quot;001&quot;をダブルクリック。</li>
+					</ol></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><img src="images/arrow057_10.png" width="120" height="30" alt="下矢印" /></td>
+				</tr>
+				<tr>
+					<td><img src="images/img/syoho22.gif" width="400" height="260" alt="配置完了"></td>
+					<td><ol>
+						<li value="6">任意の場所再度でクリック（これで&quot;001&quot;を2個目配置）して右クリックで「完了」をクリックするかキーボードの&quot;Esc&quot;で配置を完了する。</li>
+					</ol></td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4 id="partkumitate">１０．パーツを組み立てる</h4>
+						<p>3つの<a href="yougo.html#parts">パーツ<span>部品</span></a>を組み立ててみます。
+						</p></td>
+				</tr>
+				<tr>
+					<td colspan="2"><div class="how">操作方法</div></td>
+				</tr>
+				<tr>
+					<td><img src="images/img/syoho23.gif" width="400" height="324" alt="拘束 メイト"></td>
+					<td><p>＜まず"001"と"001"を組み立てます＞</p><ol>
+						<li>「パーツフィーチャパネル」から[<a href="yougo.html#kousoku">拘束<span>スケッチでの寸法やアセンブリでのパーツ間の位置関係などを決める規則。行動の自由を奪うこと。</span></a>]をクリック</li>
+						<li><a href="customize.html#shortcut" class="tooltips">拘束<span>キーボードショートカット<br />
+							C</span></a>を指定の<a href="yougo.html#dialogbox">ダイアログボックス<span>ユーザー（利用者）に情報を提示し設定を促すウインドウ。ダイアログは対話の意味。</span></a>が開いたらタイプ・拘束タイプは&quot;メイト（面同士を向かい合わせて配置）&quot;を選択</li>
+						<li><a href="yougo.html#offset">オフセット<span>ある位置（原点、基準点）からの差（距離）を表した値。差し引き計算。</span></a>は&quot;0&quot;（面同士のすきま無し）で左図の様に組み合わせたい面をそれぞれ選択して「適用」をクリック。</li>
+					</ol></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><img src="images/arrow057_10.png" width="120" height="30" alt="下矢印" /></td>
+				</tr>
+				<tr>
+					<td><img src="images/img/syoho24.gif" width="400" height="406" alt="拘束 フラッシュ" /></td>
+					<td><ol>
+						<li value="4">続けて組み合わせたい面を選択（拘束タイプはフラッシュ（隣り合わせ）になっていることを確認）、オフセットは&quot;0&quot;で「適用」をクリック。</li>
+					</ol></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><img src="images/arrow057_10.png" width="120" height="30" alt="下矢印" /></td>
+				</tr>
+				<tr>
+					<td><img src="images/img/syoho25.gif" width="400" height="406" alt="拘束 フラッシュ"></td>
+					<td><ol>
+						<li value="5">さらに続けて組み合わせたい面を選択（拘束タイプはフラッシュ（隣り合わせ）になっていることを確認）、オフセットは&quot;0&quot;で「適用」をクリック。</li>
+					</ol></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><img src="images/arrow057_10.png" width="120" height="30" alt="下矢印" /></td>
+				</tr>
+				<tr>
+					<td><img src="images/img/syoho26.gif" width="400" height="424" alt="拘束 挿入"></td>
+					<td><p>＜次に002（円柱）を組み立てます＞</p>
+						<ol>
+						<li value="6">タイプは&quot;挿入&quot;拘束タイプは&quot;位置合わせ&quot;を選択し、オフセットは&quot;0&quot;で左図の様に組み合わせたい円のエッジをそれぞれ選択して「ＯＫ」をクリック。</li>
+					</ol></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><img src="images/arrow057_10.png" width="120" height="30" alt="下矢印" /></td>
+				</tr>
+				<tr>
+					<td><img src="images/img/syoho27.gif" width="400" height="332" alt="アセンブリ"></td>
+					<td><p>＜出来上がり！＞</p></td>
+				</tr>
+			</table>
+			<!--/post-->
+	  </div>
+
+		<!--/content-->
+	</div>
+	<div id="sidebar">
+		<div id="menu">
+			<h3>コンテンツ</h3>
+<ul>
+		  <li><a href="sckech.html">スケッチ</a></li>
+		  <li><a href="feature.html">フィーチャ</a></li>
+		  <li><a href="sagyoufeature.html">作業フィーチャ</a></li>
+		<li><a href="assembly.html">アセンブリ</a></li>
+		<li><a href="restraint.html">拘束</a></li>
+		<li><a href="zumen.html">図面</a></li>
+		  <li><a href="project.html">プロジェクト</a></li>
+		  <li><a href="imate.html">iMate</a></li>
+		  <li><a href="ipart.html">iPart</a></li>
+		  <li><a href="ifeature.html">iFeature</a></li>
+		  <li><a href="aprioption.html">アプリケーションオプション</a></li>
+		  <li><a href="customize.html">カスタマイズ</a></li>
+		  <li><a href="style.html">スタイル</a></li>
+		  <li><a href="iproperty.html">iProperty</a></li>
+		  <li><a href="tube.html">チューブ＆パイプ配管</a></li>
+		  <li><a href="frame.html">フレームジェネレータ</a></li>
+		  <li><a href="pack.html">Pack &amp; Go</a></li>
+		  <li><a href="representation.html">リプレゼンテーション</a></li>
+		  <li><a href="inventorstudio.html">Inventor Studio</a></li><li><a href="presentation.html">分解プレゼンテーション</a></li>
+        <li><a class="last" href="structuralanalysis.html">構造解析</a></li>
+      </ul>
+      <h3>初心者講座</h3>
+		  <ul>
+			  <li><a class="current" href="syoho.html">アセンブリ図面作成手順</a><ol><li>
+				<a href="#sinkiproject">新規プロジェクトを作成する</a></li><li>
+				<a href="#sinkifile">新規ファイルを開く</a></li><li>
+				<a href="#asenburikankyou">アセンブリ環境に入る
+</a></li>
+<li><a href="#componento">コンポーネントを作成する</a></li>
+<li><a href="#sckechsakusei">スケッチを作成する</a></li>
+<li>
+<a href="#3jigen">3D図面を作成する
+</a></li><li>
+<a href="#anawoakeru">穴をあける</a></li><li>
+<a href="#atarasiipart">新しいパーツを作成する</a></li><li>
+<a href="#parthaiti">パーツを配置する
+</a></li><li>
+<a href="#partkumitate">パーツを組み立てる
+</a></li></ol></li>
+			  <li><a class="next" href="gamensetumei.html">画面説明</a></li>
+			  <li><a href="gaibufile.html">外部ファイルのインポート</a></li>
+			  <li><a class="last" href="hyouji.html">表示関係</a></li>
+		  </ul>
+
+
+<h3>用語集</h3>
+<ul>
+				<li><a href="yougo.html">用語集</a></li>
+		  </ul>
+</div><br />
+
+		<!--/sidebar--></div>
+	<div id="foot">
+		<div id="footer">
+			<div id="footer_inner">
+				<div id="footermenu">
+
+					<!--/footmenu--></div>
+				<p>Copyright(C) 2008 Inventor Room All Rights Reserved.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="js/scrolltopcontrol.js"></script>  <script src="js/localStorage.js"></script>
+</body>
+</html>

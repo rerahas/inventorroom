@@ -1,0 +1,1892 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <script async src="https://fundingchoicesmessages.google.com/i/pub-5271863438795471?ers=1" nonce="ToSOvJMN1nqZFl7u6fbQUA"></script><script nonce="ToSOvJMN1nqZFl7u6fbQUA">(function() {function signalGooglefcPresent() {if (!window.frames['googlefcPresent']) {if (document.body) {const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe);} else {setTimeout(signalGooglefcPresent, 0);}}}signalGooglefcPresent();})();</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4JN2T7YSKP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-4JN2T7YSKP');
+  </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Autodesk Inventor（オートデスク インベンター）の使い方</title>
+  <meta name="Description" content="Autodesk Inventor（オートデスク インベンター）の使い方 - 材料力学計算 - 重量計算" />
+  <meta name="Keywords" content="Autodesk,inventor,オートデスク,インベンター,使い方,3d,cad,材料力学計算,重量計算" />
+  <link rel="icon" href="https://inventorroom.net/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" type="img/x-icon" href="https://inventorroom.net/favicon.ico" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/content.css" />
+  <!--左側のメニュー-->
+  <link rel="stylesheet" href="css/vertical-responsive-menu.css" />
+  <!--右上のメニュー-->
+  <link rel="stylesheet" href="css/nav-layout.css" />
+  <!--jquery ui-->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/dark-hive/jquery-ui.css" />
+  <!--googlewebフォント-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@900&family=Noto+Serif+JP:wght@900&display=swap"
+    rel="stylesheet" />
+  <!--Font Awesomeフォント-->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <!--画像の整列-->
+  <link rel="stylesheet" href="css/grid.css" />
+  <!--スライドショー-->
+  <link rel="stylesheet" href="css/full-width-slider.css" />
+
+
+  <script src="https://kit.fontawesome.com/57411a6089.js" crossorigin="anonymous"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5271863438795471"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <noscript>
+    <p>
+      ※このページはJavaScriptを使用しています。JavaScript設定を有効にしてご覧ください。
+    </p>
+  </noscript>
+
+  <!--ロゴ（ページ左上のサイト名）-->
+  <header class="header">
+    <h1>
+      <a href="index.html" title="Autodesk Inventor（オートデスク インベンター）の使い方">Inventorの部屋</a>
+    </h1>
+    <!--右上のメニュー-->
+    <a href="#" class="nav-button"><i class="fa fa-ellipsis-v"></i></a>
+    <div class="nav_right">
+      <div class="nav">
+        <ul>
+          <li class="nav-submenu">
+            <a href="#">初心者講座</a>
+            <ul>
+              <li><a href="screen.html">画面説明</a></li>
+              <li><a href="beginnercourse1.html">プロジェクトの作成</a></li>
+              <li><a href="beginnercourse2.html">アセンブリの作成</a></li>
+              <li><a href="beginnercourse3.html">パーツの作成</a></li>
+              <li><a href="beginnercourse4.html">スケッチの作成</a></li>
+              <li><a href="beginnercourse5.html">フィーチャの作成</a></li>
+              <li><a href="beginnercourse6.html">パーツの配置</a></li>
+              <li><a href="beginnercourse7.html">拘束の作成</a></li>
+            </ul>
+          </li>
+          <li class="nav-submenu">
+            <a href="#">材料力学計算</a>
+            <ul>
+              <li><a href="mechanicsw_re.html">重量計算</a></li>
+              <li><a href="mechanicsb_ca1_re.html">はりのたわみ</a></li>
+              <li><a href="mechanicsp_bu1_re.html">柱の座屈</a></li>
+              <li><a href="mechanicsod.html">公式集</a></li>
+            </ul>
+          </li>
+          <li class="nav-submenu">
+            <a href="#">単位換算</a>
+            <ul>
+              <li><a href="unitcon_fo.html">力</a></li>
+              <li><a href="unitcon_le.html">長さ</a></li>
+              <li><a href="unitcon_ar.html">面積</a></li>
+              <li><a href="unitcon_vo.html">体積</a></li>
+              <li><a href="unitcon_ma.html">質量</a></li>
+              <li><a href="unitcon_sp.html">速度</a></li>
+              <li><a href="unitcon_pr.html">圧力</a></li>
+              <li><a href="unitcon_ac.html">加速度</a></li>
+              <li><a href="unitcon_an.html">角度</a></li>
+            </ul>
+          </li>
+          <li class="nav-submenu">
+            <a href="#">CAD関連リンク集</a>
+            <ul>
+              <li><a href="cadlink_fa.html">FA全般</a></li>
+              <li><a href="cadlink_ar.html">空気圧機器</a></li>
+              <li><a href="cadlink_rb.html">ロボット及び関連機器</a></li>
+              <li><a href="cadlink_st.html">光学、精密、測定機器</a></li>
+              <li><a href="cadlink_se.html">センサ</a></li>
+              <li><a href="cadlink_mo.html">モーター</a></li>
+              <li><a href="cadlink_ba.html">ベアリング、直動システム</a></li>
+              <li><a href="cadlink_sw.html">スイッチ、表示灯</a></li>
+              <li><a href="cadlink_ha.html">ハンドル、取手等</a></li>
+              <li><a href="cadlink_ec.html">その他メーカー</a></li>
+              <li><a href="cadlink_ct.html">CAD技術関連</a></li>
+            </ul>
+          </li>
+
+          <li><a href="aircylinder.html">エアシリンダ推力計算</a></li>
+          <li><a href="glossary_a.html">用語集</a></li>
+          <li><a href="bbs.html">掲示板</a></li>
+        </ul>
+      </div>
+    </div>
+    <button type="button" id="toggleMenu" class="toggle_menu">
+      <i class="fa fa-bars"></i>
+    </button>
+  </header>
+
+  <!--左側のメニュー-->
+  <nav class="vertical_nav">
+    <ul id="js-menu" class="menu">
+      <li class="menu--item menu--item__has_sub_menu">
+        <label class="menu--link">
+          <span class="menu--label"><a href="#" class="main_menu--link">プロジェクト</a></span>
+        </label>
+        <ul class="sub_menu">
+          <li class="sub_menu--item">
+            <a href="con_project1.html" class="sub_menu--link">プロジェクトの新規作成</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_project2.html" class="sub_menu--link">プロジェクトの変更</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_project3.html" class="sub_menu--link">スタイルライブラリの設定</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_project4.html" class="sub_menu--link">外観・マテリアルライブラリの追加</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_project5.html" class="sub_menu--link">ライブラリの追加</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu--item menu--item__has_sub_menu">
+        <label class="menu--link">
+          <span class="menu--label"><a href="#" class="main_menu--link">パーツ</a></span>
+        </label>
+        <ul class="sub_menu">
+          <li class="sub_menu--item">
+            <a href="con_part1.html" class="sub_menu--link">新規作成</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_part3.html" class="sub_menu--link">結合</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu--item menu--item__has_sub_menu">
+        <label class="menu--link">
+          <span class="menu--label"><a href="#" class="main_menu--link">スケッチ</a></span>
+        </label>
+        <ul class="sub_menu">
+          <li class="sub_menu--item">
+            <a href="con_sketch1.html" class="sub_menu--link">2Dスケッチ作成</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_sketch8.html" class="sub_menu--link">3Dスケッチ作成</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_sketch2.html" class="sub_menu--link">寸法追加</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_sketch3.html" class="sub_menu--link">自動寸法</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_sketch5.html" class="sub_menu--link">拘束表示</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_sketch6.html" class="sub_menu--link">拘束追加、削除</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_sketch7.html" class="sub_menu--link">AutoCadファイルの挿入</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu--item menu--item__has_sub_menu">
+        <label class="menu--link">
+          <span class="menu--label"><a href="#" class="main_menu--link">フィーチャ</a></span>
+        </label>
+        <ul class="sub_menu">
+          <li class="sub_menu--item">
+            <a href="con_feature1.html" class="sub_menu--link">押し出しフィーチャ</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_feature2.html" class="sub_menu--link">穴フィーチャ</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_feature3.html" class="sub_menu--link">ロフトフィーチャ</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_feature4.html" class="sub_menu--link">スイープフィーチャ</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_feature5.html" class="sub_menu--link">コイルフィーチャ</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_feature6.html" class="sub_menu--link">曲げフィーチャ</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_feature7.html" class="sub_menu--link">ねじフィーチャ</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_feature8.html" class="sub_menu--link">ねじデータの編集</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu--item menu--item__has_sub_menu">
+        <label class="menu--link">
+          <span class="menu--label"><a href="#" class="main_menu--link">作業フィーチャ</a></span>
+        </label>
+        <ul class="sub_menu">
+          <li class="sub_menu--item">
+            <a href="con_workfeature1.html" class="sub_menu--link">作業平面</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_workfeature2.html" class="sub_menu--link">作業軸</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu--item menu--item__has_sub_menu">
+        <label class="menu--link">
+          <span class="menu--label"><a href="#" class="main_menu--link">アセンブリ</a></span>
+        </label>
+        <ul class="sub_menu">
+          <li class="sub_menu--item">
+            <a href="con_assembly1.html" class="sub_menu--link">新規作成</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_assembly2.html" class="sub_menu--link">配置</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_assembly3.html" class="sub_menu--link">パターン</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_assembly4.html" class="sub_menu--link">コピー</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_assembly5.html" class="sub_menu--link">ミラー</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_assembly6.html" class="sub_menu--link">置換</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_assembly7.html" class="sub_menu--link">シュリンクラップ</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_assembly8.html" class="sub_menu--link">部品表</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_assembly9.html" class="sub_menu--link">計測</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_assembly10.html" class="sub_menu--link">アダプティブ</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_assembly11.html" class="sub_menu--link">フレキシブル</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu--item menu--item__has_sub_menu">
+        <label class="menu--link">
+          <span class="menu--label"><a href="#" class="main_menu--link">ジョイント</a></span>
+        </label>
+        <ul class="sub_menu">
+          <li class="sub_menu--item">
+            <a href="con_joint1.html" class="sub_menu--link">接続</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_joint2.html" class="sub_menu--link">位置合わせ</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu--item menu--item__has_sub_menu">
+        <label class="menu--link">
+          <span class="menu--label"><a href="#" class="main_menu--link">拘束</a></span>
+        </label>
+        <ul class="sub_menu">
+          <li class="sub_menu--item">
+            <a href="con_constraint1.html" class="sub_menu--link">メイト</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_constraint2.html" class="sub_menu--link">角度</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_constraint3.html" class="sub_menu--link">正接</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_constraint4.html" class="sub_menu--link">挿入</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_constraint5.html" class="sub_menu--link">対称</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_constraint6.html" class="sub_menu--link">モーション</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_constraint7.html" class="sub_menu--link">タッチ</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_constraint8.html" class="sub_menu--link">駆動</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu--item menu--item__has_sub_menu">
+        <label class="menu--link">
+          <span class="menu--label"><a href="#" class="main_menu--link">表示</a></span>
+        </label>
+        <ul class="sub_menu">
+          <li class="sub_menu--item">
+            <a href="con_visual1.html" class="sub_menu--link">表示スタイルの変更</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_visual2.html" class="sub_menu--link">断面の表示</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu--item menu--item__has_sub_menu">
+        <label class="menu--link">
+          <span class="menu--label"><a href="#" class="main_menu--link">図面</a></span>
+        </label>
+        <ul class="sub_menu">
+          <li class="sub_menu--item">
+            <a href="con_drawing1.html" class="sub_menu--link">新規作成</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_drawing2.html" class="sub_menu--link">ビューを配置</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_drawing3.html" class="sub_menu--link">オーバーレイビュー</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_drawing4.html" class="sub_menu--link">部分断面図</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_drawing5.html" class="sub_menu--link">スライス</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_drawing6.html" class="sub_menu--link">パーツ一覧</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_drawing7.html" class="sub_menu--link">バルーン</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_drawing8.html" class="sub_menu--link">表題欄</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_drawing9.html" class="sub_menu--link">記号</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_drawing10.html" class="sub_menu--link">尺度</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_drawing11.html" class="sub_menu--link">図面枠</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu--item menu--item__has_sub_menu">
+        <label class="menu--link">
+          <span class="menu--label"><a href="#" class="main_menu--link">iMate</a></span>
+        </label>
+        <ul class="sub_menu">
+          <li class="sub_menu--item">
+            <a href="con_imate1.html" class="sub_menu--link">作成</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_imate2.html" class="sub_menu--link">配置</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu--item menu--item__has_sub_menu">
+        <label class="menu--link">
+          <span class="menu--label"><a href="#" class="main_menu--link">iPart</a></span>
+        </label>
+        <ul class="sub_menu">
+          <li class="sub_menu--item">
+            <a href="con_ipart1.html" class="sub_menu--link">作成</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_ipart2.html" class="sub_menu--link">配置</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu--item menu--item__has_sub_menu">
+        <label class="menu--link">
+          <span class="menu--label"><a href="#" class="main_menu--link">iFeature</a></span>
+        </label>
+        <ul class="sub_menu">
+          <li class="sub_menu--item">
+            <a href="con_ifeature1.html" class="sub_menu--link">作成</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_ifeature2.html" class="sub_menu--link">挿入</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu--item menu--item__has_sub_menu">
+        <label class="menu--link">
+          <span class="menu--label"><a href="#" class="main_menu--link">iProperty</a></span>
+        </label>
+        <ul class="sub_menu">
+          <li class="sub_menu--item">
+            <a href="con_iproperty1.html" class="sub_menu--link">カスタムの設定</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu--item menu--item__has_sub_menu">
+        <label class="menu--link">
+          <span class="menu--label"><a href="#" class="main_menu--link">iLogic</a></span>
+        </label>
+        <ul class="sub_menu">
+          <li class="sub_menu--item">
+            <a href="con_ilogic1.html" class="sub_menu--link">パーツ情報</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu--item menu--item__has_sub_menu">
+        <label class="menu--link">
+          <span class="menu--label"><a href="#" class="main_menu--link">アプリケーションオプション</a></span>
+        </label>
+        <ul class="sub_menu">
+          <li class="sub_menu--item">
+            <a href="con_option1.html" class="sub_menu--link">一般タブ</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_option2.html" class="sub_menu--link">色タブ</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_option3.html" class="sub_menu--link">表示タブ</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_option4.html" class="sub_menu--link">パーツタブ</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_option5.html" class="sub_menu--link">アセンブリタブ</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_option6.html" class="sub_menu--link">図面タブ</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_option7.html" class="sub_menu--link">スケッチタブ</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu--item menu--item__has_sub_menu">
+        <label class="menu--link">
+          <span class="menu--label"><a href="#" class="main_menu--link">カスタマイズ</a></span>
+        </label>
+        <ul class="sub_menu">
+          <li class="sub_menu--item">
+            <a href="con_customize1.html" class="sub_menu--link">リボンにコマンドを追加</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_customize2.html" class="sub_menu--link">ショートカットの変更・追加</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_customize3.html" class="sub_menu--link">マーキングメニューの変更</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_customize4.html" class="sub_menu--link">インポート、エクスポート</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu--item menu--item__has_sub_menu">
+        <label class="menu--link">
+          <span class="menu--label"><a href="#" class="main_menu--link">スタイル</a></span>
+        </label>
+        <ul class="sub_menu">
+          <li class="sub_menu--item">
+            <a href="con_style1.html" class="sub_menu--link">図面のスタイル設定</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu--item menu--item__has_sub_menu">
+        <label class="menu--link">
+          <span class="menu--label"><a href="#" class="main_menu--link">シートメタル</a></span>
+        </label>
+        <ul class="sub_menu">
+          <li class="sub_menu--item">
+            <a href="con_sheetmetal1.html" class="sub_menu--link">作成</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_sheetmetal2.html" class="sub_menu--link">シートメタルの既定</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu--item menu--item__has_sub_menu">
+        <label class="menu--link">
+          <span class="menu--label"><a href="#" class="main_menu--link">材料と外観</a></span>
+        </label>
+        <ul class="sub_menu">
+          <li class="sub_menu--item">
+            <a href="con_material1.html" class="sub_menu--link">ライブラリの作成</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu--item menu--item__has_sub_menu">
+        <label class="menu--link">
+          <span class="menu--label"><a href="#" class="main_menu--link">チューブ＆パイプ配管</a></span>
+        </label>
+        <ul class="sub_menu">
+          <li class="sub_menu--item">
+            <a href="con_tubeandpipe1.html" class="sub_menu--link">ホースの作成</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_tubeandpipe2.html" class="sub_menu--link">スタイルの設定</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_tubeandpipe3.html" class="sub_menu--link">ルート作成</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu--item menu--item__has_sub_menu">
+        <label class="menu--link">
+          <span class="menu--label"><a href="#" class="main_menu--link">フレームジェネレータ</a></span>
+        </label>
+        <ul class="sub_menu">
+          <li class="sub_menu--item">
+            <a href="con_framegenerator1.html" class="sub_menu--link">スケルトンモデルの作成</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_framegenerator2.html" class="sub_menu--link">フレームメンバを挿入</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_framegenerator3.html" class="sub_menu--link">ノッチ</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu--item menu--item__has_sub_menu">
+        <label class="menu--link">
+          <span class="menu--label"><a href="#" class="main_menu--link">Pack and Go</a></span>
+        </label>
+        <ul class="sub_menu">
+          <li class="sub_menu--item">
+            <a href="con_packandgo1.html" class="sub_menu--link">実行</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu--item menu--item__has_sub_menu">
+        <label class="menu--link">
+          <span class="menu--label"><a href="#" class="main_menu--link">リプレゼンテーション</a></span>
+        </label>
+        <ul class="sub_menu">
+          <li class="sub_menu--item">
+            <a href="con_representation1.html" class="sub_menu--link">ビューリプレゼンテーション</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_representation2.html" class="sub_menu--link">ポジションリプレゼンテーション</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_representation3.html" class="sub_menu--link">詳細レベルリプレゼンテーション</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu--item menu--item__has_sub_menu">
+        <label class="menu--link">
+          <span class="menu--label"><a href="#" class="main_menu--link">Inventor Studio</a></span>
+        </label>
+        <ul class="sub_menu">
+          <li class="sub_menu--item">
+            <a href="con_inventorstudio1.html" class="sub_menu--link">PRをアニメーション</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu--item menu--item__has_sub_menu">
+        <label class="menu--link">
+          <span class="menu--label"><a href="#" class="main_menu--link">分解ビュー</a></span>
+        </label>
+        <ul class="sub_menu">
+          <li class="sub_menu--item">
+            <a href="con_explodedview1.html" class="sub_menu--link">プレゼンテーションファイルの作成</a>
+          </li>
+          <li class="sub_menu--item">
+            <a href="con_explodedview2.html" class="sub_menu--link">分解ビューの作成</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu--item menu--item__has_sub_menu">
+        <label class="menu--link">
+          <span class="menu--label"><a href="#" class="main_menu--link">構造解析</a></span>
+        </label>
+        <ul class="sub_menu">
+          <li class="sub_menu--item">
+            <a href="con_stressanalysis1.html" class="sub_menu--link">シミュレーション</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu--item menu--item__has_sub_menu">
+        <label class="menu--link">
+          <span class="menu--label"><a href="#" class="main_menu--link">ダイナミックシミュレーション</a></span>
+        </label>
+        <ul class="sub_menu">
+          <li class="sub_menu--item">
+            <a href="con_dynamicsimulation1.html" class="sub_menu--link">3D接触</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div class="wrapper">
+    <div class="main">
+      <div class="content">
+        <div class="content_inner">
+          <article>
+            <section>
+              <p>
+                はりのたわみ、<a
+                  href="http://ja.wikipedia.org/wiki/%E6%96%AD%E9%9D%A2%E4%BA%8C%E6%AC%A1%E3%83%A2%E3%83%BC%E3%83%A1%E3%83%B3%E3%83%88"
+                  target="_blank">断面二次モーメント</a>、<a href="http://ja.wikipedia.org/wiki/座屈" target="_blank">柱の座屈</a>などの<a
+                  href="http://ja.wikipedia.org/wiki/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6"
+                  target="_blank">材料力学</a>計算が出来ます。</p>
+              <p class="sousa">※Inventorでは重量（質量）や体積及びたわみなどは <a href="con_iproperty1.html">iProperty</a>の物理情報や<a
+                  href="con_stressanalysis1.html">構造解析</a>で<br>&nbsp;&nbsp;
+                わかりますが一般的な計算として重量計算から掲載しました。
+              </p>
+            </section>
+            <section>
+              <h2>材料力学計算 - 重量計算</h2>
+              <!-- google検索 -->
+              <form action="https://www.google.co.jp" class="search_container-width">
+                <input type="hidden" name="cx" value="partner-pub-5271863438795471:3546798877" />
+                <input type="hidden" name="ie" value="UTF-8" />
+                <input type="text" name="q" placeholder="キーワード検索" />
+                <input type="submit" value="&#xf002" name="sa" />
+              </form>
+              <div class="affi2">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Inventorコンテンツトップ横長 -->
+                <ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-5271863438795471"
+                  data-ad-slot="2115858498" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+              </div>
+            </section>
+
+            <section>
+              <div class="sub_list">
+                <h3>材料力学計算の目次</h3>
+                <ul>
+                  <li><a href="mechanicsw_re.html">重量計算</a></li>
+                  <li><a href="mechanicsb_ca1_re.html">はりのたわみ</a></li>
+                  <li><a href="mechanicsp_bu1_re.html">柱の座屈</a></li>
+                  <li><a href="mechanicsod.html">公式集</a></li>
+                </ul>
+              </div>
+              <h4>重量計算</h4>
+              <p class="p_exp">１．形状を選択して下さい。</p>
+
+              <table class="mectable">
+                <tr class="center">
+                  <td><a href="mechanicsw_re.html#mectable">直方体<br>
+                      <img src="images/img/mechanics1.gif" width="108" height="87" alt="直方体" /></a></td>
+                  <td><a href="mechanicsw_cy.html#mectable">円柱<br>
+                      <img src="images/img/mechanics2.gif" width="108" height="87" alt="円柱" /></a></td>
+                  <td><a href="mechanicsw_cs.html#mectable">Ｈ形鋼<br>
+                      <img src="images/img/mechanics5.gif" width="74" height="87" alt="Ｈ形鋼" /></a></td>
+                  <td><a href="mechanicsw_hs.html#mectable">溝形鋼<br>
+                      <img src="images/img/mechanics4.gif" width="83" height="87" alt="溝形鋼" /></a></td>
+                  <td><a href="mechanicsw_as.html#mectable">山形鋼<br>
+                      <img src="images/img/mechanics3.gif" width="112" height="87" alt="山形鋼" /></a></td>
+                </tr>
+              </table><br>
+
+              <form name="nForm">
+                <a id="mectable" class="anchor"></a>
+                <p class="p_exp">２．材質を選択して下さい。</p>
+                <table class="mectable">
+                  <tr class="center">
+                    <td colspan="2">材質</td>
+                    <td><a href="http://ja.wikipedia.org/wiki/%E6%AF%94%E9%87%8D" target="_blank">比重</a></td>
+                    <td>その他の材質</td>
+                  </tr>
+                  <tr>
+                    <td><label class="f_radio">
+                        <input type="radio" name="ch1" checked="checked" value="7.85" onclick="set_value(this)">
+                        鉄</label></td>
+                    <td>SS400</td>
+                    <td>7.85g/cm3</td>
+                    <td class="centertop" rowspan="5">
+                      <select class="select-css"  id="other_material_select" onchange="set_value(this)">
+                        <option value="" selected>選択してください</option>
+                        <option value="7.85">SKS3</option>
+                        <option value="7.8">SKD11</option>
+                        <option value="7.98">SUS310S</option>
+                        <option value="7.7">SUS430</option>
+                        <option value="7.78">SUS440C</option>
+                        <option value="7.8">NAK55</option>
+                        <option value="2.7">A6061</option>
+                        <option value="2.79">A2017</option>
+                        <option value="1.2">ウレタン</option>
+                        <option value="0.98">二トリルゴム</option>
+                        <option value="1.8">ふっ素ゴム</option>
+                        <option value="0.97">シリコンゴム</option>
+                        <option value="1.27">PET</option>
+                        <option value="1.4">塩ビ</option>
+                        <option value="1.2">アクリル</option>
+                        <option value="1.2">ポリカーボネート</option>
+                        <option value="1.16">MCナイロン</option>
+                        <option value="1.41">ポリアセタール</option>
+                        <option value="2.2">ふっ素樹脂</option>
+                        <option value="1.32">PEEK</option>
+                        <option value="1.4">ベークライト</option>
+                        <option value="1.8">エポキシガラス</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label class="f_radio">
+                        <input type="radio" name="ch1" value="2.68" onclick="set_value(this)">
+                        アルミ</label></td>
+                    <td>A5052</td>
+                    <td>2.68g/cm3</td>
+                  </tr>
+                  <tr>
+                    <td><label class="f_radio">
+                        <input type="radio" name="ch1" value="7.93" onclick="set_value(this)">
+                        ステンレス</label></td>
+                    <td>SUS304</td>
+                    <td> 7.93g/cm3</td>
+                  </tr>
+                  <tr>
+                    <td><label class="f_radio">
+                        <input type="radio" name="ch1" value="8.44" onclick="set_value(this)">
+                        銅</label></td>
+                    <td>C2801</td>
+                    <td>8.44g/cm3</td>
+                  </tr>
+                  <tr>
+                    <td><label class="f_radio">
+                        <input type="radio" name="ch1" value="14.8" onclick="set_value(this)">
+                        超硬</label></td>
+                    <td>V10（JIS分類記号）</td>
+                    <td>14.8g/cm3</td>
+                  </tr>
+                </table><br>
+
+                <p class="p_exp">３．各寸法を入力後、（形鋼の値は<a href="#itiran" id="cal">下記一覧表</a>から寸法を選択できます）計算をクリックしてください。<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;※比重は材質を選択すると自動的に入力されますが、任意の値も入力できます</p>
+                  <div class="affi_r">
+                    <iframe src="affi_rentrax_728x90.html" width="750" height="120" frameborder="0"
+                      scrolling="no">この部分はインラインフレームを使用しています。</iframe>
+                  </div>                <div>
+                  <img src="images/img/mechanics_w5.png" alt="山形鋼" />
+                </div>
+
+                <div class="list_parent">
+                  <div class="list_child1">辺（A）</div>
+                  <div class="list_child2">
+                    <input type="text" id="text1" name="a" value="25" tabindex="1" />
+                  </div>
+                  <div class="list_child3">
+                    mm
+                  </div>
+                </div>
+                <div class="list_parent">
+                  <div class="list_child1">辺（B）</div>
+                  <div class="list_child2">
+                    <input type="text" id="text2" name="b" value="25" tabindex="2" />
+                  </div>
+                  <div class="list_child3">
+                    mm
+                  </div>
+                </div>
+                <div class="list_parent">
+                  <div class="list_child1">厚さ（t1）</div>
+                  <div class="list_child2">
+                    <input type="text" id="text3" name="t" value="3" tabindex="3" />
+                  </div>
+                  <div class="list_child3">
+                    mm
+                  </div>
+                </div>
+                <div class="list_parent">
+                  <div class="list_child1">r1</div>
+                  <div class="list_child2">
+                    <input type="text" id="text4" name="r1" value="4" tabindex="4" />
+                  </div>
+                  <div class="list_child3">
+                    mm
+                  </div>
+                </div>
+                <div class="list_parent">
+                  <div class="list_child1">r2</div>
+                  <div class="list_child2">
+                    <input type="text" id="text5" name="r2" value="2" tabindex="5" />
+                  </div>
+                  <div class="list_child3">
+                    mm
+                  </div>
+                </div>
+                <div class="list_parent">
+                  <div class="list_child1">長さ（length）</div>
+                  <div class="list_child2">
+                    <input type="text" name="l" tabindex="6" />
+                  </div>
+                  <div class="list_child3">
+                    mm
+                  </div>
+                </div>
+                <div class="list_parent">
+                  <div class="list_child1">比重</div>
+                  <div class="list_child2">
+                    <input type="text" name="sg" id="sg" value="7.85" tabindex="7" />
+                  </div>
+                  <div class="list_child3">
+                    g/cm3
+                  </div>
+                </div>
+                <div class="list_parent">
+                  <div class="list_child1">個数</div>
+                  <div class="list_child2">
+                    <input type="text" name="n" value="1" tabindex="8" />
+                  </div>
+                  <div class="list_child3">
+                    個
+                  </div>
+                </div>
+                <div class="list_parent">
+                  <div class="list_child1">&nbsp;</div>
+                  <div>
+                    <input type="button" value="計   算" id="calculate" onclick="ast(),check5(),check()" tabindex="9"
+                      onfocus="focusA(this);" onblur="blurA(this)" />
+                  </div>
+                  <div class="list_child3">
+                    &nbsp;
+                  </div>
+                </div>
+                <div class="list_parent">
+                  <div class="list_child1">重量</div>
+                  <div class="list_child2">
+                    <input type="text" name="result" class="text_field1" />
+                  </div>
+                  <div class="list_child3">
+                    g
+                  </div>
+                </div>
+                <div class="list_parent">
+                  <div class="list_child1">体積</div>
+                  <div class="list_child2">
+                    <input type="text" name="volume" />
+                  </div>
+                  <div class="list_child3">
+                    mm³
+                  </div>
+                </div>
+                <p colspan="3">※小数点以下4桁目は四捨五入</p>
+              </form><br><br>
+              <table>
+                <tr>
+                  <td colspan="7">
+                    <p>等辺山形鋼の標準断面寸法、断面積、単位質量及び断面特性 （JIS G 3192）</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="images/img/mechanics_w5b.gif" width="180" height="180" alt="山形鋼" /></td>
+                  <td colspan="3">
+                    <p><a
+                        href="http://ja.wikipedia.org/wiki/%E6%96%AD%E9%9D%A2%E4%BA%8C%E6%AC%A1%E3%83%A2%E3%83%BC%E3%83%A1%E3%83%B3%E3%83%88"
+                        target="_blank">断面二次モーメント</a> l=αi²</p>
+                    <p><a href="http://ja.wikipedia.org/wiki/%E6%96%AD%E9%9D%A2%E5%9B%9E%E8%BB%A2%E5%8D%8A%E5%BE%84"
+                        target="_blank">断面二次半径</a> I=√l/α</p>
+                    <p><a href="http://kentiku-kouzou.jp/struc-danmenkeisuu.html" target="_blank">断面係数</a> Z=l/e
+                    </p>
+                    <p> （α=断面積）</p>
+                  </td>
+                  <td colspan="3"><img src="images/img/mechanics_w5c.gif" width="180" height="180" alt="山形鋼" /></td>
+                </tr>
+              </table>
+              <table id="itiran" class="mectable3">
+                <tbody>
+                  <tr>
+                    <td colspan="4">標準断面寸法 mm</td>
+                    <td width="7%" rowspan="3">断面積<br>
+                      cm²</td>
+                    <td width="6%" rowspan="3">単位<br>
+                      重量<br>
+                      kg/m</td>
+                    <td colspan="12">参考</td>
+                  </tr>
+                  <tr>
+                    <td width="9%" rowspan="2">A×B
+                    </td>
+                    <td width="4%" rowspan="2">t
+                    </td>
+                    <td width="5%" rowspan="2">r1
+                    </td>
+                    <td width="5%" rowspan="2">r2
+                    </td>
+                    <td colspan="2">重心の位置<br>
+                      cm</td>
+                    <td colspan="4">断面二次
+                      モーメント<br>
+                      cm⁴</td>
+                    <td colspan="4">断面二次半径<br>
+                      cm</td>
+                    <td colspan="2">断面係<br>
+                      cm³</td>
+                  </tr>
+                  <tr>
+                    <td width="7%">Cx
+                    </td>
+                    <td width="6%">Cy
+                    </td>
+                    <td width="5%">Ix
+                    </td>
+                    <td width="5%">Iy
+                    </td>
+                    <td width="6%">最大<br>
+                      Iu
+                    </td>
+                    <td width="5%">最小<br>
+                      Iv
+                    </td>
+                    <td width="5%">ix
+                    </td>
+                    <td width="5%">iy
+                    </td>
+                    <td width="5%">最大<br>
+                      iu
+                    </td>
+                    <td width="5%">最小<br>
+                      iv
+                    </td>
+                    <td width="5%">Zx
+                    </td>
+                    <td width="5%">Zy
+                    </td>
+                  </tr>
+                  <tr data-href="#cal" id="tr0" onmouseover="cellOver(0)" onmouseout="cellOut(0)"
+                    onclick="getCell('1')">
+                    <td><span id="td1a">25</span>×<span id="td1b">25</span></td>
+                    <td id="td1c">3</td>
+                    <td id="td1d">4</td>
+                    <td id="td1e">2</td>
+                    <td>1.427</td>
+                    <td>1.12</td>
+                    <td>0.719</td>
+                    <td>0.719</td>
+                    <td>0.797</td>
+                    <td>0.797</td>
+                    <td>1.26</td>
+                    <td>0.332</td>
+                    <td>0.747</td>
+                    <td>0.747</td>
+                    <td>0.940</td>
+                    <td>0.483</td>
+                    <td>0.448</td>
+                    <td>0.448</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr1" onmouseover="cellOver(1)" onmouseout="cellOut(1)"
+                    onclick="getCell('2')">
+                    <td><span id="td2a">30</span>×<span id="td2b">30</span></td>
+                    <td id="td2c">3</td>
+                    <td id="td2d">4</td>
+                    <td id="td2e">2</td>
+                    <td>1.727</td>
+                    <td>1.36</td>
+                    <td>0.844</td>
+                    <td>0.844</td>
+                    <td>1.42</td>
+                    <td>1.42</td>
+                    <td>2.26</td>
+                    <td>0.590</td>
+                    <td>0.908</td>
+                    <td>0.908</td>
+                    <td>1.14</td>
+                    <td>0.585</td>
+                    <td>0.661</td>
+                    <td>0.661</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr2" onmouseover="cellOver(2)" onmouseout="cellOut(2)"
+                    onclick="getCell('3')">
+                    <td><span id="td3a">40</span>×<span id="td3b">40</span></td>
+                    <td id="td3c">3</td>
+                    <td id="td3d">4.5</td>
+                    <td id="td3e">2</td>
+                    <td>2.336</td>
+                    <td>1.83</td>
+                    <td>1.09</td>
+                    <td>1.09</td>
+                    <td>3.53</td>
+                    <td>3.53</td>
+                    <td>5.60</td>
+                    <td>1.46</td>
+                    <td>1.23</td>
+                    <td>1.23</td>
+                    <td>1.55</td>
+                    <td>0.790</td>
+                    <td>1.21</td>
+                    <td>1.21</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr3" onmouseover="cellOver(3)" onmouseout="cellOut(3)"
+                    onclick="getCell('4')">
+                    <td><span id="td4a">40</span>×<span id="td4b">40</span></td>
+                    <td id="td4c">5</td>
+                    <td id="td4d">4.5</td>
+                    <td id="td4e">3</td>
+                    <td>3.775</td>
+                    <td>2.95</td>
+                    <td>1.17</td>
+                    <td>1.17</td>
+                    <td>5.42</td>
+                    <td>5.42</td>
+                    <td>8.59</td>
+                    <td>2.25</td>
+                    <td>1.20</td>
+                    <td>1.20</td>
+                    <td>1.51</td>
+                    <td>0.774</td>
+                    <td>1.91</td>
+                    <td>1.91</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr4" onmouseover="cellOver(4)" onmouseout="cellOut(4)"
+                    onclick="getCell('5')">
+                    <td><span id="td5a">45</span>×<span id="td5b">45</span></td>
+                    <td id="td5c">4</td>
+                    <td id="td5d">6.5</td>
+                    <td id="td5e">3</td>
+                    <td>3.492</td>
+                    <td>2.74</td>
+                    <td>1.24</td>
+                    <td>1.24</td>
+                    <td>6.50</td>
+                    <td>6.5</td>
+                    <td>10.3</td>
+                    <td>2.70</td>
+                    <td>1.36</td>
+                    <td>1.36</td>
+                    <td>1.72</td>
+                    <td>0.880</td>
+                    <td>2.00</td>
+                    <td>2.00</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr5" onmouseover="cellOver(5)" onmouseout="cellOut(5)"
+                    onclick="getCell('6')">
+                    <td><span id="td6a">45</span>×<span id="td6b">45</span></td>
+                    <td id="td6c">5</td>
+                    <td id="td6d">6.5</td>
+                    <td id="td6e">3</td>
+                    <td>4.302</td>
+                    <td>3.38</td>
+                    <td>1.28</td>
+                    <td>1.28</td>
+                    <td>7.91</td>
+                    <td>7.91</td>
+                    <td>12.5</td>
+                    <td>3.29</td>
+                    <td>1.36</td>
+                    <td>1.36</td>
+                    <td>1.71</td>
+                    <td>0.874</td>
+                    <td>2.46</td>
+                    <td>2.46</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr6" onmouseover="cellOver(6)" onmouseout="cellOut(6)"
+                    onclick="getCell('7')">
+                    <td><span id="td7a">50</span>×<span id="td7b">50</span></td>
+                    <td id="td7c">4</td>
+                    <td id="td7d">6.5</td>
+                    <td id="td7e">3</td>
+                    <td>3.892</td>
+                    <td>3.06</td>
+                    <td>1.37</td>
+                    <td>1.37</td>
+                    <td>9.06</td>
+                    <td>9.06</td>
+                    <td>14.4</td>
+                    <td>3.76</td>
+                    <td>1.53</td>
+                    <td>1.53</td>
+                    <td>1.92</td>
+                    <td>0.983</td>
+                    <td>2.49</td>
+                    <td>2.49</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr7" onmouseover="cellOver(7)" onmouseout="cellOut(7)"
+                    onclick="getCell('8')">
+                    <td><span id="td8a">50</span>×<span id="td8b">50</span></td>
+                    <td id="td8c">5</td>
+                    <td id="td8d">6.5</td>
+                    <td id="td8e">3</td>
+                    <td>4.802</td>
+                    <td>3.77</td>
+                    <td>1.41</td>
+                    <td>1.41</td>
+                    <td>11.1</td>
+                    <td>11.1</td>
+                    <td>17.5</td>
+                    <td>4.58</td>
+                    <td>1.52</td>
+                    <td>1.52</td>
+                    <td>1.91</td>
+                    <td>
+                      <p>0.976</p>
+                    </td>
+                    <td>3.08</td>
+                    <td>3.08</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr8" onmouseover="cellOver(8)" onmouseout="cellOut(8)"
+                    onclick="getCell('9')">
+                    <td><span id="td9a">50</span>×<span id="td9b">50</span></td>
+                    <td id="td9c">6</td>
+                    <td id="td9d">6.5</td>
+                    <td id="td9e">4.5</td>
+                    <td>5.644</td>
+                    <td>4.43</td>
+                    <td>1.44</td>
+                    <td>1.44</td>
+                    <td>12.6</td>
+                    <td>12.6</td>
+                    <td>20.0</td>
+                    <td>5.23</td>
+                    <td>1.50</td>
+                    <td>1.50</td>
+                    <td>1.88</td>
+                    <td>0.963</td>
+                    <td>3.55</td>
+                    <td>3.55</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr9" onmouseover="cellOver(9)" onmouseout="cellOut(9)"
+                    onclick="getCell('10')">
+                    <td><span id="td10a">60</span>×<span id="td10b">60</span></td>
+                    <td id="td10c">4</td>
+                    <td id="td10d">6.5</td>
+                    <td id="td10e">3</td>
+                    <td>4.692</td>
+                    <td>3.68</td>
+                    <td>1.61</td>
+                    <td>1.61</td>
+                    <td>16.0</td>
+                    <td>16.0</td>
+                    <td>25.4</td>
+                    <td>6.62</td>
+                    <td>1.85</td>
+                    <td>1.85</td>
+                    <td>2.33</td>
+                    <td>1.19</td>
+                    <td>3.66</td>
+                    <td>3.66</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr10" onmouseover="cellOver(01)" onmouseout="cellOut(10)"
+                    onclick="getCell('11')">
+                    <td><span id="td11a">60</span>×<span id="td11b">60</span></td>
+                    <td id="td11c">5</td>
+                    <td id="td11d">6.5</td>
+                    <td id="td11e">3</td>
+                    <td>5.802</td>
+                    <td>4.55</td>
+                    <td>1.66</td>
+                    <td>1.66</td>
+                    <td>19.6</td>
+                    <td>19.6</td>
+                    <td>31.2</td>
+                    <td>8.09</td>
+                    <td>1.84</td>
+                    <td>1.84</td>
+                    <td>2.32</td>
+                    <td>1.18</td>
+                    <td>4.52</td>
+                    <td>4.52</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr11" onmouseover="cellOver(11)" onmouseout="cellOut(11)"
+                    onclick="getCell('12')">
+                    <td><span id="td12a">65</span>×<span id="td12b">65</span></td>
+                    <td id="td12c">5</td>
+                    <td id="td12d">8.5</td>
+                    <td id="td12e">3</td>
+                    <td>6.367</td>
+                    <td>5.00</td>
+                    <td>1.77</td>
+                    <td>1.77</td>
+                    <td>25.3</td>
+                    <td>25.3</td>
+                    <td>40.1</td>
+                    <td>10.5</td>
+                    <td>1.99</td>
+                    <td>1.99</td>
+                    <td>2.51</td>
+                    <td>1.28</td>
+                    <td>5.35</td>
+                    <td>5.35</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr12" onmouseover="cellOver(12)" onmouseout="cellOut(12)"
+                    onclick="getCell('13')">
+                    <td><span id="td13a">65</span>×<span id="td13b">65</span></td>
+                    <td id="td13c">6</td>
+                    <td id="td13d">8.5</td>
+                    <td id="td13e">4</td>
+                    <td>7.527</td>
+                    <td>5.91</td>
+                    <td>1.81</td>
+                    <td>1.81</td>
+                    <td>29.4</td>
+                    <td>29.4</td>
+                    <td>46.6</td>
+                    <td>12.2</td>
+                    <td>1.98</td>
+                    <td>1.98</td>
+                    <td>2.49</td>
+                    <td>1.27</td>
+                    <td>6.26</td>
+                    <td>6.26</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr13" onmouseover="cellOver(13)" onmouseout="cellOut(13)"
+                    onclick="getCell('14')">
+                    <td><span id="td14a">65</span>×<span id="td14b">65</span></td>
+                    <td id="td14c">8</td>
+                    <td id="td14d">8.5</td>
+                    <td id="td14e">6</td>
+                    <td>9.761</td>
+                    <td>7.66</td>
+                    <td>1.88</td>
+                    <td>1.88</td>
+                    <td>36.8</td>
+                    <td>36.8</td>
+                    <td>58.3</td>
+                    <td>15.3</td>
+                    <td>1.94</td>
+                    <td>1.94</td>
+                    <td>2.44</td>
+                    <td>1.25</td>
+                    <td>7.96</td>
+                    <td>7.96</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr14" onmouseover="cellOver(14)" onmouseout="cellOut(14)"
+                    onclick="getCell('15')">
+                    <td><span id="td15a">70</span>×<span id="td15b">70</span></td>
+                    <td id="td15c">6</td>
+                    <td id="td15d">8.5</td>
+                    <td id="td15e">4</td>
+                    <td>8.127</td>
+                    <td>6.38</td>
+                    <td>1.93</td>
+                    <td>1.93</td>
+                    <td>37.1</td>
+                    <td>37.1</td>
+                    <td>58.9</td>
+                    <td>15.3</td>
+                    <td>2.14</td>
+                    <td>2.14</td>
+                    <td>2.69</td>
+                    <td>1.37</td>
+                    <td>7.33</td>
+                    <td>7.33</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr15" onmouseover="cellOver(15)" onmouseout="cellOut(15)"
+                    onclick="getCell('16')">
+                    <td><span id="td16a">75</span>×<span id="td16b">75</span></td>
+                    <td id="td16c">6</td>
+                    <td id="td16d">8.5</td>
+                    <td id="td16e">4</td>
+                    <td>8.727</td>
+                    <td>6.85</td>
+                    <td>2.06</td>
+                    <td>2.06</td>
+                    <td>46.1</td>
+                    <td>46.1</td>
+                    <td>73.2</td>
+                    <td>19.0</td>
+                    <td>2.30</td>
+                    <td>2.30</td>
+                    <td>2.90</td>
+                    <td>1.48</td>
+                    <td>8.47</td>
+                    <td>8.47</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr16" onmouseover="cellOver(16)" onmouseout="cellOut(16)"
+                    onclick="getCell('17')">
+                    <td><span id="td17a">75</span>×<span id="td17b">75</span></td>
+                    <td id="td17c">9</td>
+                    <td id="td17d">8.5</td>
+                    <td id="td17e">6</td>
+                    <td>12.69</td>
+                    <td>9.96</td>
+                    <td>2.17</td>
+                    <td>2.17</td>
+                    <td>64.4</td>
+                    <td>64.4</td>
+                    <td>102</td>
+                    <td>26.7</td>
+                    <td>2.25</td>
+                    <td>2.25</td>
+                    <td>2.84</td>
+                    <td>1.45</td>
+                    <td>12.1</td>
+                    <td>12.1</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr17" onmouseover="cellOver(17)" onmouseout="cellOut(17)"
+                    onclick="getCell('18')">
+                    <td><span id="td18a">75</span>×<span id="td18b">75</span></td>
+                    <td id="td18c">12</td>
+                    <td id="td18d">8.5</td>
+                    <td id="td18e">6</td>
+                    <td>16.56</td>
+                    <td>13.0</td>
+                    <td>2.29</td>
+                    <td>2.29</td>
+                    <td>81.9</td>
+                    <td>81.9</td>
+                    <td>129</td>
+                    <td>34.5</td>
+                    <td>2.22</td>
+                    <td>2.22</td>
+                    <td>2.79</td>
+                    <td>1.44</td>
+                    <td>15.7</td>
+                    <td>15.7</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr18" onmouseover="cellOver(18)" onmouseout="cellOut(18)"
+                    onclick="getCell('19')">
+                    <td><span id="td19a">80</span>×<span id="td19b">80</span></td>
+                    <td id="td19c">6</td>
+                    <td id="td19d">8.5</td>
+                    <td id="td19e">4</td>
+                    <td>9.327</td>
+                    <td>7.32</td>
+                    <td>2.18</td>
+                    <td>2.18</td>
+                    <td>56.4</td>
+                    <td>56.4</td>
+                    <td>89.6</td>
+                    <td>23.2</td>
+                    <td>2.46</td>
+                    <td>2.46</td>
+                    <td>3.10</td>
+                    <td>1.58</td>
+                    <td>9.70</td>
+                    <td>9.70</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr19" onmouseover="cellOver(19)" onmouseout="cellOut(19)"
+                    onclick="getCell('20')">
+                    <td><span id="td20a">90</span>×<span id="td20b">90</span></td>
+                    <td id="td20c">6</td>
+                    <td id="td20d">10</td>
+                    <td id="td20e">5</td>
+                    <td>10.55</td>
+                    <td>8.28</td>
+                    <td>2.42</td>
+                    <td>2.42</td>
+                    <td>80.7</td>
+                    <td>80.7</td>
+                    <td>128</td>
+                    <td>33.4</td>
+                    <td>2.77</td>
+                    <td>2.77</td>
+                    <td>3.48</td>
+                    <td>1.78</td>
+                    <td>12.3</td>
+                    <td>12.3</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr20" onmouseover="cellOver(20)" onmouseout="cellOut(20)"
+                    onclick="getCell('21')">
+                    <td><span id="td21a">90</span>×<span id="td21b">90</span></td>
+                    <td id="td21c">7</td>
+                    <td id="td21d">10</td>
+                    <td id="td21e">5</td>
+                    <td>12.22</td>
+                    <td>9.59</td>
+                    <td>2.46</td>
+                    <td>2.46</td>
+                    <td>93.0</td>
+                    <td>93.0</td>
+                    <td>148</td>
+                    <td>38.3</td>
+                    <td>2.76</td>
+                    <td>2.76</td>
+                    <td>3.48</td>
+                    <td>1.77</td>
+                    <td>14.2</td>
+                    <td>14.2</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr21" onmouseover="cellOver(21)" onmouseout="cellOut(21)"
+                    onclick="getCell('22')">
+                    <td><span id="td22a">90</span>×<span id="td22b">90</span></td>
+                    <td id="td22c">10</td>
+                    <td id="td22d">10</td>
+                    <td id="td22e">7</td>
+                    <td>17.00</td>
+                    <td>13.3</td>
+                    <td>2.57</td>
+                    <td>2.57</td>
+                    <td>125</td>
+                    <td>125</td>
+                    <td>199</td>
+                    <td>51.6</td>
+                    <td>2.71</td>
+                    <td>2.71</td>
+                    <td>3.42</td>
+                    <td>1.74</td>
+                    <td>19.5</td>
+                    <td>19.5</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr22" onmouseover="cellOver(22)" onmouseout="cellOut(22)"
+                    onclick="getCell('23')">
+                    <td><span id="td23a">90</span>×<span id="td23b">90</span></td>
+                    <td id="td23c">13</td>
+                    <td id="td23d">10</td>
+                    <td id="td23e">7</td>
+                    <td>21.71</td>
+                    <td>17.0</td>
+                    <td>2.69</td>
+                    <td>2.69</td>
+                    <td>156</td>
+                    <td>156</td>
+                    <td>248</td>
+                    <td>65.3</td>
+                    <td>2.68</td>
+                    <td>2.68</td>
+                    <td>3.38</td>
+                    <td>1.73</td>
+                    <td>24.8</td>
+                    <td>24.8</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr23" onmouseover="cellOver(23)" onmouseout="cellOut(23)"
+                    onclick="getCell('24')">
+                    <td><span id="td24a">100</span>×<span id="td24b">100</span></td>
+                    <td id="td24c">7</td>
+                    <td id="td24d">10</td>
+                    <td id="td24e">5</td>
+                    <td>13.62</td>
+                    <td>10.7</td>
+                    <td>2.71</td>
+                    <td>2.71</td>
+                    <td>129</td>
+                    <td>129</td>
+                    <td>205</td>
+                    <td>53.1</td>
+                    <td>3.08</td>
+                    <td>3.08</td>
+                    <td>3.88</td>
+                    <td>1.98</td>
+                    <td>17.7</td>
+                    <td>17.7</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr24" onmouseover="cellOver(24)" onmouseout="cellOut(24)"
+                    onclick="getCell('25')">
+                    <td><span id="td25a">100</span>×<span id="td25b">100</span></td>
+                    <td id="td25c">10</td>
+                    <td id="td25d">10</td>
+                    <td id="td25e">7</td>
+                    <td>19.00</td>
+                    <td>14.9</td>
+                    <td>2.82</td>
+                    <td>2.82</td>
+                    <td>175</td>
+                    <td>175</td>
+                    <td>278</td>
+                    <td>72.0</td>
+                    <td>3.04</td>
+                    <td>3.04</td>
+                    <td>3.83</td>
+                    <td>1.95</td>
+                    <td>24.4</td>
+                    <td>24.4</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr25" onmouseover="cellOver(25)" onmouseout="cellOut(25)"
+                    onclick="getCell('26')">
+                    <td><span id="td26a">100</span>×<span id="td26b">100</span></td>
+                    <td id="td26c">13</td>
+                    <td id="td26d">10</td>
+                    <td id="td26e">7</td>
+                    <td>24.31</td>
+                    <td>19.1</td>
+                    <td>2.94</td>
+                    <td>2.94</td>
+                    <td>220</td>
+                    <td>220</td>
+                    <td>348</td>
+                    <td>91.1</td>
+                    <td>3.00</td>
+                    <td>3.00</td>
+                    <td>3.78</td>
+                    <td>1.94</td>
+                    <td>31.1</td>
+                    <td>31.1</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr26" onmouseover="cellOver(26)" onmouseout="cellOut(26)"
+                    onclick="getCell('27')">
+                    <td><span id="td27a">120</span>×<span id="td27b">120</span></td>
+                    <td id="td27c">8</td>
+                    <td id="td27d">12</td>
+                    <td id="td27e">5</td>
+                    <td>18.76</td>
+                    <td>14.7</td>
+                    <td>3.24</td>
+                    <td>3.24</td>
+                    <td>258</td>
+                    <td>258</td>
+                    <td>410</td>
+                    <td>106</td>
+                    <td>3.71</td>
+                    <td>3.71</td>
+                    <td>4.68</td>
+                    <td>2.38</td>
+                    <td>29.5</td>
+                    <td>29.5</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr27" onmouseover="cellOver(27)" onmouseout="cellOut(27)"
+                    onclick="getCell('28')">
+                    <td><span id="td28a">130</span>×<span id="td28b">130</span></td>
+                    <td id="td28c">9</td>
+                    <td id="td28d">12</td>
+                    <td id="td28e">6</td>
+                    <td>22.74</td>
+                    <td>17.9</td>
+                    <td>3.53</td>
+                    <td>3.53</td>
+                    <td>366</td>
+                    <td>366</td>
+                    <td>583</td>
+                    <td>150</td>
+                    <td>4.01</td>
+                    <td>4.01</td>
+                    <td>5.06</td>
+                    <td>2.57</td>
+                    <td>38.7</td>
+                    <td>38.7</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr28" onmouseover="cellOver(28)" onmouseout="cellOut(28)"
+                    onclick="getCell('29')">
+                    <td><span id="td29a">130</span>×<span id="td29b">130</span></td>
+                    <td id="td29c">12</td>
+                    <td id="td29d">12</td>
+                    <td id="td29e">8.5</td>
+                    <td>29.76</td>
+                    <td>23.4</td>
+                    <td>3.64</td>
+                    <td>3.64</td>
+                    <td>467</td>
+                    <td>467</td>
+                    <td>743</td>
+                    <td>192</td>
+                    <td>3.96</td>
+                    <td>3.96</td>
+                    <td>5.00</td>
+                    <td>2.54</td>
+                    <td>49.9</td>
+                    <td>49.9</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr29" onmouseover="cellOver(29)" onmouseout="cellOut(29)"
+                    onclick="getCell('30')">
+                    <td><span id="td30a">130</span>×<span id="td30b">130</span></td>
+                    <td id="td30c">15</td>
+                    <td id="td30d">12</td>
+                    <td id="td30e">8.5</td>
+                    <td>36.75</td>
+                    <td>28.8</td>
+                    <td>3.76</td>
+                    <td>3.76</td>
+                    <td>568</td>
+                    <td>568</td>
+                    <td>902</td>
+                    <td>234</td>
+                    <td>3.93</td>
+                    <td>3.93</td>
+                    <td>4.95</td>
+                    <td>2.53</td>
+                    <td>61.5</td>
+                    <td>61.5</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr30" onmouseover="cellOver(30)" onmouseout="cellOut(30)"
+                    onclick="getCell('31')">
+                    <td><span id="td31a">150</span>×<span id="td31b">150</span></td>
+                    <td id="td31c">12</td>
+                    <td id="td31d">14</td>
+                    <td id="td31e">7</td>
+                    <td>34.77</td>
+                    <td>27.3</td>
+                    <td>4.14</td>
+                    <td>4.14</td>
+                    <td>740</td>
+                    <td>740</td>
+                    <td>1176</td>
+                    <td>304</td>
+                    <td>4.61</td>
+                    <td>4.61</td>
+                    <td>5.82</td>
+                    <td>2.96</td>
+                    <td>68.1</td>
+                    <td>68.1</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr31" onmouseover="cellOver(31)" onmouseout="cellOut(31)"
+                    onclick="getCell('32')">
+                    <td><span id="td32a">150</span>×<span id="td32b">150</span></td>
+                    <td id="td32c">15</td>
+                    <td id="td32d">14</td>
+                    <td id="td32e">10</td>
+                    <td>42.74</td>
+                    <td>33.6</td>
+                    <td>4.24</td>
+                    <td>4.24</td>
+                    <td>888</td>
+                    <td>888</td>
+                    <td>1410</td>
+                    <td>365</td>
+                    <td>4.56</td>
+                    <td>4.56</td>
+                    <td>5.75</td>
+                    <td>2.92</td>
+                    <td>82.6</td>
+                    <td>82.6</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr32" onmouseover="cellOver(32)" onmouseout="cellOut(32)"
+                    onclick="getCell('33')">
+                    <td><span id="td33a">150</span>×<span id="td33b">150</span></td>
+                    <td id="td33c">19</td>
+                    <td id="td33d">14</td>
+                    <td id="td33e">10</td>
+                    <td>53.38</td>
+                    <td>41.9</td>
+                    <td>4.40</td>
+                    <td>4.40</td>
+                    <td>1090</td>
+                    <td>1090</td>
+                    <td>1730</td>
+                    <td>451</td>
+                    <td>4.52</td>
+                    <td>4.52</td>
+                    <td>5.69</td>
+                    <td>2.91</td>
+                    <td>103</td>
+                    <td>103</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr33" onmouseover="cellOver(33)" onmouseout="cellOut(33)"
+                    onclick="getCell('34')">
+                    <td><span id="td34a">175</span>×<span id="td34b">175</span></td>
+                    <td id="td34c">12</td>
+                    <td id="td34d">15</td>
+                    <td id="td34e">11</td>
+                    <td>40.52</td>
+                    <td>31.8</td>
+                    <td>4.73</td>
+                    <td>4.73</td>
+                    <td>1170</td>
+                    <td>1170</td>
+                    <td>1860</td>
+                    <td>480</td>
+                    <td>5.38</td>
+                    <td>5.38</td>
+                    <td>6.78</td>
+                    <td>3.44</td>
+                    <td>91.8</td>
+                    <td>91.8</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr34" onmouseover="cellOver(34)" onmouseout="cellOut(34)"
+                    onclick="getCell('35')">
+                    <td><span id="td35a">175</span>×<span id="td35b">175</span></td>
+                    <td id="td35c">15</td>
+                    <td id="td35d">15</td>
+                    <td id="td35e">11</td>
+                    <td>50.21</td>
+                    <td>39.4</td>
+                    <td>4.85</td>
+                    <td>4.85</td>
+                    <td>1440</td>
+                    <td>1440</td>
+                    <td>2290</td>
+                    <td>589</td>
+                    <td>5.35</td>
+                    <td>5.35</td>
+                    <td>6.75</td>
+                    <td>3.42</td>
+                    <td>114</td>
+                    <td>114</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr35" onmouseover="cellOver(35)" onmouseout="cellOut(35)"
+                    onclick="getCell('36')">
+                    <td><span id="td36a">200</span>×<span id="td36b">200</span></td>
+                    <td id="td36c">15</td>
+                    <td id="td36d">17</td>
+                    <td id="td36e">12</td>
+                    <td>57.75</td>
+                    <td>45.3</td>
+                    <td>5.46</td>
+                    <td>5.46</td>
+                    <td>2180</td>
+                    <td>2180</td>
+                    <td>3470</td>
+                    <td>891</td>
+                    <td>6.14</td>
+                    <td>6.14</td>
+                    <td>7.75</td>
+                    <td>3.93</td>
+                    <td>150</td>
+                    <td>150</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr36" onmouseover="cellOver(36)" onmouseout="cellOut(36)"
+                    onclick="getCell('37')">
+                    <td><span id="td37a">200</span>×<span id="td37b">200</span></td>
+                    <td id="td37c">20</td>
+                    <td id="td37d">17</td>
+                    <td id="td37e">12</td>
+                    <td>76.00</td>
+                    <td>59.7</td>
+                    <td>5.67</td>
+                    <td>5.67</td>
+                    <td>2820</td>
+                    <td>2820</td>
+                    <td>4490</td>
+                    <td>1160</td>
+                    <td>6.09</td>
+                    <td>6.09</td>
+                    <td>7.68</td>
+                    <td>3.90</td>
+                    <td>197</td>
+                    <td>197</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr37" onmouseover="cellOver(37)" onmouseout="cellOut(37)"
+                    onclick="getCell('38')">
+                    <td><span id="td38a">200</span>×<span id="td38b">200</span></td>
+                    <td id="td38c">25</td>
+                    <td id="td38d">17</td>
+                    <td id="td38e">12</td>
+                    <td>93.75</td>
+                    <td>73.6</td>
+                    <td>5.86</td>
+                    <td>5.86</td>
+                    <td>3420</td>
+                    <td>3420</td>
+                    <td>5420</td>
+                    <td>1410</td>
+                    <td>6.04</td>
+                    <td>6.04</td>
+                    <td>7.61</td>
+                    <td>3.88</td>
+                    <td>242</td>
+                    <td>242</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr38" onmouseover="cellOver(38)" onmouseout="cellOut(38)"
+                    onclick="getCell('39')">
+                    <td><span id="td39a">250</span>×<span id="td39b">250</span></td>
+                    <td id="td39c">25</td>
+                    <td id="td39d">24</td>
+                    <td id="td39e">12</td>
+                    <td>119.4</td>
+                    <td>93.7</td>
+                    <td>7.10</td>
+                    <td>7.10</td>
+                    <td>6950</td>
+                    <td>6950</td>
+                    <td>11000</td>
+                    <td>2860</td>
+                    <td>7.63</td>
+                    <td>7.63</td>
+                    <td>9.62</td>
+                    <td>4.90</td>
+                    <td>388</td>
+                    <td>388</td>
+                  </tr>
+                  <tr data-href="#cal" id="tr39" onmouseover="cellOver(39)" onmouseout="cellOut(39)"
+                    onclick="getCell('40')">
+                    <td><span id="td40a">250</span>×<span id="td40b">250</span></td>
+                    <td id="td40c">35</td>
+                    <td id="td40d">24</td>
+                    <td id="td40e">18</td>
+                    <td>162.6</td>
+                    <td>128</td>
+                    <td>7.45</td>
+                    <td>7.45</td>
+                    <td>9110</td>
+                    <td>9110</td>
+                    <td>14400</td>
+                    <td>3790</td>
+                    <td>7.49</td>
+                    <td>7.49</td>
+                    <td>9.42</td>
+                    <td>4.83</td>
+                    <td>519</td>
+                    <td>519</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+            <div class="affi4">
+              <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5271863438795471"
+                crossorigin="anonymous"></script>
+              <!-- レスポンシブ　横長　2021 -->
+              <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5271863438795471"
+                data-ad-slot="4938923415" data-ad-format="auto" data-full-width-responsive="true"></ins>
+              <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+          </article>
+          <!-- / .content_inner -->
+        </div>
+        <!-- / .content -->
+      </div>
+      <!-- / .main -->
+    </div>
+    <div class="rightside">
+      <div class="rightside_inner">
+        <form action="https://www.google.co.jp" class="search_container">
+          <div>
+            <input type="hidden" name="cx" value="partner-pub-5271863438795471:3546798877" />
+            <input type="hidden" name="ie" value="UTF-8" />
+            <input type="text" name="q" placeholder="キーワード検索" />
+            <input type="submit" value="&#xf002" name="sa" />
+          </div>
+        </form>
+        <div class="affi1">
+          <a href="https://choikaji.com/cadpc.html" target="_blank" rel="noopener noreferrer"><img src="images/3dcad.png" width="300px" height="100px" alt="3D CAD用パソコン比較"></a>
+        </div>
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5271863438795471"
+     crossorigin="anonymous"></script>
+<!-- レスポンシブ　スクエア　2021 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5271863438795471"
+     data-ad-slot="2161179851"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        <div class="affi1">
+          <iframe src="affi_rakuten_300x250.html" width="302" height="270" frameborder="0"
+            scrolling="no">この部分はインラインフレームを使用しています。</iframe>
+        </div>
+        <div class="affi1">
+          <iframe src="affi_rentrax_300x250.html" width="302" height="270" frameborder="0"
+            scrolling="no">この部分はインラインフレームを使用しています。</iframe>
+        </div>
+        <div class="affi1">
+          <script type="text/javascript" src="//rot4.a8.net/jsa/d8344e0e28f9ea2bb41dcef31b67e433/c6f057b86584942e415435ffb1fa93d4.js"></script>
+        </div>
+              <!-- / .rightside_inner -->
+      </div>
+      <!-- / .rightside -->
+    </div>
+    <!-- / .wrapper -->
+  </div>
+  <footer id="footer">
+    <p class="footerlink">
+      <a href="sitemap.html">サイトマップ</a>
+    </p>
+    <p class="copyright">
+      <small>&copy; 2008 Orust Co., Ltd.</small>
+    </p>
+  </footer>
+  <!--googleのCDN（ネットワーク経由でコンテンツを提供するサービス）よりjqueryをロード-->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $('.main').tooltip({
+        show: false,
+        hide: false,
+      });
+    });
+  </script>
+  <!--エフェクト動作-->
+  <script src="js/nav.jquery.min.js"></script>
+  <!--右上のメニュー-->
+  <script>
+    $(".nav").nav();
+  </script>
+  <!--左側のメニュー-->
+  <script src="js/vertical-responsive-menu.min.js"></script>
+  <!--フッター下部固定-->
+  <script src="js/footerFixed.js"></script>
+  <!--スクロールしながらページのトップに戻る-->
+  <script src="js/scrolltopcontrol.js"></script>
+  <!--材料力学計算-->
+  <script src="js/mechanics.js"></script>
+  <script type="text/javascript" src="js/table.js"></script>
+
+
+</body>
+
+</html>

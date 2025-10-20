@@ -1,0 +1,851 @@
+﻿@charset "utf-8"; /*文字コード指定*/
+/* ----- 全体設定 ----- */
+
+body {
+	background-color: #fff;
+	margin: 0px; /*ボックス外側の余白(値1つは上下左右をまとめて指定)(bodyにmargin:0指定で全体の余白をなくす)*/
+	padding: 0px; /*ボックス内側の余白(値1つは上下左右をまとめて指定)(bodyにpadding:0指定で全体の余白をなくす)*/
+	font-family: "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro"; /*フォントの種類(左から優先順位)*/
+	font-size: 75%; /* フォントサイズ指定(%はブラウザに設定した標準文字サイズ(通常16px)に対する値)*/
+	line-height: 2;	/*行の高さを指定(数値のみの場合はfont-sizeの倍数)*/
+	color: #333; /*文字色*/
+}
+h1, h2, h3, h4, h5, p, ul, ol, li, dl, dt, dd, form {
+	padding: 0px;
+	margin: 0px;
+}
+ul {
+	list-style-type: none;
+}
+a {
+	color: #0000FF; /*文字色*/
+	text-decoration: none; /*文字装飾(下線、上線など)指定(noneはなし)*/
+}
+a:hover {
+	color: #C74B15; /*文字色*/
+	text-decoration: underline; /*文字装飾(下線、上線など)指定(underlineは下線を引く)*/
+}
+img {
+	border: none; /*境界線指定(noneはなし)(imgタグ→リンク画像に境界線を付けない為)*/
+}
+input, select {
+	vertical-align:-0.1em;
+}
+.color1 {
+	color: #008000;
+}
+.color2 {
+	color: #F00;
+}
+.color3 {
+	color: #F60;
+}
+.color4 {
+	color: #dc143c;
+}
+.font1 {
+	font-size: 170%;
+}
+.font2 {
+	font-size: 90%;
+}
+.font3 {
+	font-size: 180%;
+}
+.font4 {
+	font-size: 110%;
+}
+.font5 {
+	font-size: 80%;
+}
+.font6 {
+	font-size: 70%;
+}
+.font7 {
+	font-size: 130%;
+}
+
+/* ----- レイアウト ----- */
+
+#container {
+	width: 990px;
+	margin: auto;
+}
+#content {
+	float: right;
+	width: 800px;
+	margin: 20px 0;
+}
+#sidebar {
+	float: left;
+	width: 180px;
+	margin: 20px 0;
+}
+#foot {
+	clear: both;
+}
+/* ----- ヘッダー ----- */
+
+#header {
+	background-image: url(../images/header_bg.gif);
+	background-repeat: repeat-x;
+	position: relative;
+	width: 990px;
+	height: 100px; /*領域の高さを指定*/
+	margin: 0;
+}
+#header h1 {
+	position: absolute; /*ボックスの配置方法(absoluteは絶対位置配置)*/
+	left: 10px; /*左からの距離(positionで指定している場合に適用)*/
+	top: 0; /*上からの距離(positionで指定している場合に適用)*/
+	font-size: 0.9em; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
+	font-weight: normal; /*フォントの太さ指定(normalは標準)*/
+	line-height: 23px;
+	color: #fff;
+}
+#header h2 {
+	position: absolute; /*ボックスの配置方法(absoluteは絶対位置配置)*/
+	left: 230px; /*左からの距離(positionで指定している場合に適用)*/
+	top: 35px; /*上からの距離(positionで指定している場合に適用)*/
+	font-size: 0.9em; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
+	font-weight: normal; /*フォントの太さ指定(normalは標準)*/
+	height:46px;
+	line-height: 23px;
+}
+#header p {
+	position: absolute; /*ボックスの配置方法(absoluteは絶対位置配置)*/
+	left: 250px; /*左からの距離(positionで指定している場合に適用)*/
+	top: 65px; /*上からの距離(positionで指定している場合に適用)*/
+	font-size: 0.8em; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
+}
+#logo {
+	position: absolute; /*ボックスの配置方法(absoluteは絶対位置配置)*/
+	top: 35px;
+	left: 10px;
+}
+#fb {
+	position: absolute; /*ボックスの配置方法(absoluteは絶対位置配置)*/
+	top: 25px;
+	left: 675px;
+}
+#go {
+	position: absolute; /*ボックスの配置方法(absoluteは絶対位置配置)*/
+	top: 25px;
+	left: 820px;
+}
+#tw {
+	position: absolute; /*ボックスの配置方法(absoluteは絶対位置配置)*/
+	top: 50px;
+	left: 675px;
+}
+#mi {
+	position: absolute; /*ボックスの配置方法(absoluteは絶対位置配置)*/
+	top: 50px;
+	left: 820px;
+}
+#search {
+	position: absolute; /*ボックスの配置方法(absoluteは絶対位置配置)*/
+	top: 70px;
+	right: 5px;
+}
+#search #submit {
+	font-weight: bold;
+	width: 50px; /*幅指定*/
+	height: 20px;
+	margin-left: 5px; /*ボックス外側左の余白*/
+	border: none; /*境界線指定(noneはなし)(検索ボタンの標準の境界線を削除)*/
+	font-size: 12px; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
+	color: #fff; /*文字色*/
+	background-image: url(../images/submitbtn.gif); /*背景画像を指定　url(画像ファイルを指定)*/
+	background-repeat: no-repeat; /*背景画像の並べかた(no-repeatは１つだけ表示)*/
+	cursor: pointer;
+}
+#search #submit:hover {
+	background-image: url(../images/submitbtn2.gif); /*背景画像を指定　url(画像ファイルを指定)*/
+	background-repeat: no-repeat; /*背景画像の並べかた(no-repeatは１つだけ表示)*/
+	color: #fff; /*文字色*/
+}
+#headermenu {
+	position: absolute; /*ボックスの配置方法(absoluteは絶対位置配置)*/
+	right: 10px; /*左からの距離(positionで指定している場合に適用)*/
+	top: 0; /*上からの距離(positionで指定している場合に適用)*/
+	font-size: 0.9em;
+	line-height: 23px;
+}
+#headermenu li a {
+	color: #fff;
+	text-decoration: none;
+}
+#headermenu li a:hover {
+	color: #FF3F00;
+}
+#headermenu li {
+	background-image: url(../images/arrow002_10.gif);
+	background-repeat: no-repeat;
+	background-position: 0 3px; /*画像の表示位置：　x軸（横方向）　y軸（縦方向）*/
+	padding-left: 15px;
+	display: inline;
+	margin-left: 20px;
+}
+/* ----- メニュー ----- */
+
+.nav {
+	font-size: 1em;
+	width: 990px;
+	height: 30px;
+}
+.nav li {
+	list-style-type: none;
+	float: left;
+}
+.nav li a {
+	display: block;
+	width: 164px;
+	line-height: 30px;
+	border-right: solid 1px #fff;
+	color: #fff;
+	font-weight: normal;
+	text-align: center;
+	text-decoration: none;
+}
+.nav, .nav li a {
+	background-image: url(../images/gr.gif);
+	background-repeat: repeat-x;
+}
+.nav li a:hover {
+	background-position: 0 -50px;
+}
+/* ----- コンテンツ ----- */
+
+#post {
+	width: auto;
+	position: relative;
+	clear: both;
+}
+#post_left {
+	float: left;
+	width: 585px;
+	margin-bottom: 20px;
+}
+#post_right {
+	float: right;
+	width: 200px;
+	margin-bottom: 20px;
+	position: relative;
+}
+#post h3 {
+	clear: both;
+	padding-left: 10px;
+	margin-bottom: 5px;
+	font-size: 1em;
+	line-height: 30px;
+	background-image: url(../images/h2.gif);
+	color: #fff;
+}
+#post h4 {
+	font-weight: normal;
+	font-size: 1.2em;
+	color:#f60;
+}
+#post .toppage {
+	padding-bottom:10px;
+}
+#post p {
+	padding: 0.5em 10px 0;
+}
+#post ul li {
+	line-height: 25px;
+	margin-left: 10px;
+	background-image: url(../images/point.gif);
+	background-repeat: no-repeat;
+	background-position: 0 10px; /*画像の表示位置：　x軸（横方向）　y軸（縦方向）*/
+	padding-left: 8px;
+}
+#post img {
+	margin-bottom: 10px;
+}
+#post .top {
+	margin-bottom: 0;
+}
+.breadcrumb {
+	padding-bottom: 5px;
+}
+.top li {
+	line-height: 25px;
+	margin-left: 10px;
+	background-image: url(../images/point.gif);
+	background-repeat: no-repeat;
+	background-position: 0 10px; /*画像の表示位置：　x軸（横方向）　y軸（縦方向）*/
+	padding-left: 8px;
+}
+#post .arrow {
+	margin-bottom: 0;
+}
+#post_right .block {
+	border-right: 1px solid #666666;
+	border-left: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	margin-bottom: 10px;
+}
+#post_right .block h3 {
+	background: none #999999;
+	color: #FFFFFF;
+	font-size: 0.9em;
+	font-weight: normal;
+	line-height: 30px;
+}
+#post_right .block2 {
+	border-right: 1px solid #666666;
+	border-left: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	margin: 8px 0;
+}
+#post_right .block2 h3 {
+	background: none #999999;
+	color: #FFFFFF;
+	font-size: 0.9em;
+	font-weight: normal;
+	line-height: 30px;
+}
+.post_af {
+	position: absolute; /*ボックスの配置方法(absoluteは絶対位置配置)*/
+	top: 0;
+	right: 5px;
+}
+#post a:hover img {
+	filter: Alpha(opacity=70); /*視覚効果(IE独自) Alphaは透過表示 opacityは開始透明度*/
+	opacity: 0.7; /*要素の透明度*/
+}
+.cad {
+	position: absolute; /*ボックスの配置方法(absoluteは絶対位置配置)*/
+	top: 250px;
+	left: 50px;
+}
+.newlist dl {
+	width: 585px;			/*ボックスの幅*/
+	height: 100px;			/*ボックスの高さ*/
+	overflow: auto;
+	padding-left: 5px;
+	text-align: left;
+}
+.newlist dt {
+	font-weight: bold;	/*日付の色を太字にする*/
+	color: #333;		/*日付の文字色*/
+}
+.newlist dd {
+	border-bottom: 1px solid #cccccc;	/*日付ごとの下線*/
+	margin: 0px 10px 0 5px;
+}
+#toptable {
+	width: 585px;	/*テーブルの幅*/
+	border-collapse: collapse;
+	line-height: 1.5em;
+}
+#toptable td, th {
+	padding-left: 5px;
+	border: none;
+	vertical-align: top;
+}
+#toptable h3 {
+	background-image: url(../images/arrow067_01.gif);
+	background-repeat: no-repeat;
+	background-position: 0 9px; /*画像の表示位置：　x軸（横方向）　y軸（縦方向）*/
+	padding-left: 15px;
+	font-weight: normal;
+}
+#toptable ol {
+	margin: 0 0 0 2.5em;
+	padding: 0;
+}
+#toptable li {
+	margin: 0.3em 0;
+}
+#cattebale {
+	width: 785px;	/*テーブルの幅*/
+	border-collapse: collapse;
+	line-height: 1.5em;
+}
+#cattable td, th {
+	vertical-align: top;
+}
+#cattable ol {
+	margin: 0 0 0 2.5em;
+	padding: 0;
+}
+.sub li {
+	float: left;
+	margin: 10px 30px 0 0;
+}
+#cattable img {
+	margin: 5px 10px 10px 20px;
+}
+#cattable .border {
+	margin: 5px 10px 10px 20px;
+	border:1px solid #bbb;
+}
+#comtable {
+	width: 635px;	/*テーブルの幅*/
+	border-collapse: collapse;
+	border: 1px solid #bbb;
+	line-height: 1.5em;
+	margin-left: auto;
+	margin-right: auto;
+}
+#comtable td, th {
+	border: 1px solid #bbb;
+	padding-left: 10px;
+}
+#yougotable {
+	width: 785px;	/*テーブルの幅*/
+	border-collapse: collapse;
+	border: 1px solid #bbb;
+	line-height: 1.5em;
+	margin-left: auto;
+	margin-right: auto;
+}
+#yougotable td, th {
+	border: 1px solid #bbb;
+	padding: 0 5px;
+	vertical-align:top;
+}
+#yougotable h4 {
+	padding: 5px 0;
+}
+#yougotable p {
+	padding: 5px 5px;
+}
+#yougomenu li {
+	display: inline;
+	background-image: none !important;
+	margin-right: 23px;
+}
+#yougomenu ul {
+	margin: 5px 0;
+}
+#cadlinktable {
+	width: 585px;	/*テーブルの幅*/
+	border-collapse: collapse;
+	border: 1px solid #bbb;
+	line-height: 2em;
+	margin-left: auto;
+	margin-right: auto;
+}
+#cadlinktable td, th {
+	border: 1px solid #bbb;
+	padding: 0 5px;
+	vertical-align:top;
+}
+#cadlinktable h4 {
+	padding: 5px 0;
+}
+#cadlinktable p {
+	padding: 5px 5px;
+}
+#cadlinktable img {
+	margin: 5px !important
+}
+#yougomenu li {
+	display: inline;
+	background-image: none !important;
+	margin-right: 23px;
+}
+#yougomenu ul {
+	margin: 5px 0;
+}
+#mectable {
+	width: 785px;	/*テーブルの幅*/
+	border-collapse: collapse;
+	border: 1px solid #bbb;
+	line-height: 1.2em;
+	margin-left: auto;
+	margin-right: auto;
+}
+#mectable td, th {
+	border: 1px solid #bbb;
+	padding: 5px;
+}
+#mectable h4 {
+	padding: 5px 0;
+}
+#mectable p {
+	padding: 5px 5px;
+}
+#mectable ol {
+	margin: 0 0 0 2.5em;
+	padding: 0;
+}
+#mectable img {
+	margin: 0;
+	padding: 5px 5px;
+}
+#mectable2 {
+	width: 785px;	/*テーブルの幅*/
+	border-collapse: collapse;
+	margin-top:10px;
+	line-height: 1.2em;
+	margin-left: auto;
+	margin-right: auto;
+}
+#mectable2 td, th {
+	padding: 5px;
+}
+#mectable2 h4 {
+	padding: 5px 0;
+}
+#mectable2 p {
+	padding: 5px 5px;
+}
+#mectable2 img {
+	margin: 0;
+	padding: 5px 5px;
+}
+#mectable3 {
+	width: 785px;	/*テーブルの幅*/
+	border-collapse: collapse;
+	border: 1px solid #bbb;
+	line-height: 1.2em;
+	margin-left: auto;
+	margin-right: auto;
+}
+#mectable3 td, th {
+	border: 1px solid #bbb;
+	padding: 5px;
+	text-align:center;
+}
+#mectablesm {
+	width: 785px;	/*テーブルの幅*/
+	border-collapse: collapse;
+	border: 1px solid #bbb;
+	line-height: 1.2em;
+	margin-left: auto;
+	margin-right: auto;
+}
+#mectablesm td, th {
+	border: 1px solid #bbb;
+	margin: 0;
+	padding: 0;
+}
+#mectablesm h4 {
+	padding: 10px 0;
+}
+#mectablesm p {
+	padding: 5px 5px;
+}
+#mectablesm ol {
+	margin: 0 0 0 2.5em;
+	padding: 0;
+}
+#mectablesm img {
+	margin: 0;
+	padding: 0;
+}
+tbody td {
+ -webkit-transition: background-color .2s linear;
+ -moz-transition: background-color .2s linear;
+ transition: background-color .2s linear;
+}
+tbody tr.clickable:hover td {
+	background: #7fff7f;
+	cursor: pointer;
+}
+#conversiontable {
+	width: 785px;	/*テーブルの幅*/
+	border-collapse: collapse;
+	border: 1px solid #bbb;
+	line-height: 1.2em;
+	margin-left: 0;
+}
+
+#conversiontable td, th {
+	border: 1px solid #bbb;
+	padding: 5px;
+}
+#conversiontable h4 {
+	padding: 5px 0;
+}
+#conversiontable p {
+	padding: 5px 5px;
+}
+#conversion {
+	width: 680px;	/*テーブルの幅*/
+	border-collapse: collapse;
+	line-height: 1.2em;
+	margin-left: auto;
+	margin-right: auto;
+	table-layout: fixed;
+}
+#conversion td, th {
+	padding: 2px;
+	text-align: left;
+}
+
+
+.text_field1 {
+	width: 70px;
+}
+.text_field2 {
+	width: 115px;
+	text-align:center;
+	color:crimson;
+	font-Size:1.3em;
+	font-weight: bold;
+}
+.text_field3 {
+	width: 115px;
+	text-align:center;
+}
+.text_field4 {
+	width: 115px;
+	text-align:center;
+	color:#008000;
+	font-Size:1.2em;
+	font-weight: bold;
+}
+.summary {
+	border-bottom: 2px solid #aaa;
+	padding-left:10px;
+	font-size: 1.1em
+}
+.sousa {
+	padding-left: 20px !important;
+	font-size: 1em;
+}
+.how {
+	font-weight: normal;
+	font-size: 1.2em;
+	background-image: url(../images/point026_04.png);
+	background-repeat: no-repeat;
+	background-position: 0 8px;
+	margin-left:5px;
+	padding-left: 20px;
+}
+.ponit {
+	width: auto;
+	height: auto;
+	margin: 10px 10px 10px 30px;
+	border: 1px solid #bbb;
+	padding: 3px 10px;
+}
+.ponit img {
+	margin-left: 0 !important;
+}
+.imagea {
+	margin: 0 2px !important;
+}
+#pageTop {
+	position: fixed;
+	clear: both;
+	right: 0px;
+	bottom: 0px;
+}
+#pageTop a {
+	float: right;
+	padding: 1px 10px;
+	color: #fff;
+	display: block;
+	background: #3F9A12;
+	opacity: 1;
+}
+#pageTop a:hover {
+	text-decoration: none;
+	opacity: 0.8;
+}
+
+/* ----- 吹き出し ----- */
+
+.tooltip {
+	cursor: help;
+	position: relative;
+}
+a.tooltip span {
+	display:none;
+	padding:2px 3px;
+	margin-left:8px;
+	width:200px;
+}
+a.tooltip:hover span {
+	display:inline;
+	position:absolute;
+	bottom: 20px;
+	right: -50px;
+	border:1px solid #161A1F;
+	background:#1E2227;
+	color:#fff;
+	font-size: 12px;
+	padding: 5px;
+	filter: Alpha(opacity=90); /*視覚効果(IE独自) Alphaは透過表示 opacityは開始透明度*/
+	opacity: 0.9; /*要素の透明度*/
+}
+.tooltips {
+	cursor: help;
+	position: relative;
+}
+a.tooltips span {
+	display:none;
+	padding:2px 3px;
+	margin-left:8px;
+	width:150px;
+}
+a.tooltips:hover span {
+	display:inline;
+	position:absolute;
+	bottom: 20px;
+	right: 0;
+	border:1px solid #999;
+	background:#ccc;
+	color:#333;
+	font-size: 12px;
+	padding: 5px;
+	filter: Alpha(opacity=90); /*視覚効果(IE独自) Alphaは透過表示 opacityは開始透明度*/
+	opacity: 0.9; /*要素の透明度*/
+}
+.f_radio {
+	height:20px;
+	display:block;
+	cursor:pointer;
+}
+.f_radio:hover {
+	background-color: #adff2f;
+}
+#calculate {
+	font-weight: bold;
+	width: 120px; /*幅指定*/
+	height: 38px;
+	border: none; /*境界線指定(noneはなし)(検索ボタンの標準の境界線を削除)*/
+	font-size: 1.3em; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
+	color: #fff; /*文字色*/
+	background-image: url(../images/calculate.gif); /*背景画像を指定　url(画像ファイルを指定)*/
+	background-repeat: no-repeat; /*背景画像の並べかた(no-repeatは１つだけ表示)*/
+	cursor: pointer;
+}
+#calculate:hover {
+	background-image: url(../images/calculate2.gif); /*背景画像を指定　url(画像ファイルを指定)*/
+	background-repeat: no-repeat; /*背景画像の並べかた(no-repeatは１つだけ表示)*/
+}
+#nkgf {
+	padding-left: 3px;
+	width: 35px; /*幅指定*/
+	height: 20px;
+	font-size: 0.9em; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
+	cursor: pointer;
+}
+/* ----- サイドバー ----- */
+	
+#menu {
+	width: 180px;
+	overflow: hidden;
+	line-height: 30px;
+}
+#menu h3 {
+	background-image: url(../images/menu_head.gif);
+	text-align: center;
+	font-size: 1em;
+	font-weight: normal;
+	color: #fff;
+}
+#menu a {
+	padding-left: 10px;
+	font-size: 0.95em;
+	color: #333;
+	text-decoration: none;
+	display: block;
+	border-bottom: 1px solid #999;
+}
+#menu a:hover {
+	color: #333;
+	background-color: #E5E5E5;
+}
+#menu a.current {
+	padding-left: 10px;
+	font-size: 0.95em;
+	color: #333;
+	text-decoration: none;
+	display: block;
+	background-color: #E5E5E5;
+}
+#menu ol {
+	margin: 0 0 0 3em;
+	padding: 0;
+}
+#menu ol li a {
+	padding-left: 0px;
+	font-size: 0.9em;
+	color: #0000FF;
+	text-decoration: none;
+	display: block;
+	border: none;
+}
+#menu ol li a:hover {
+	color: #FF3F00;
+	background-color: #fff;
+}
+#menu a.next {
+	border-top: 1px solid #999;
+}
+#menu a.last {
+	border-bottom: none;
+}
+/* ----- フッター ----- */
+
+#footer {
+	background-image: url(../images/footer_bg.gif);
+	background-repeat: repeat-x;
+	height: 70px; /*領域の高さを指定*/
+	width: 100%;
+}
+#footer_inner {
+	position: relative;
+	width: 960px;
+	padding: 10px;
+	margin: 0 auto;
+}
+#footer p {
+	font-size: 0.75em;
+	color: #333;
+	text-align: center;
+}
+#footerlink {
+	margin-bottom: 8px; /*ボックス外側下の余白*/
+	text-align: center; /*水平方向の表示位置(centerは中央揃え)*/
+}
+#footerlink li a {
+	color: #333;
+	text-decoration: none;
+	font-size: 0.8em;
+}
+#footerlink li a:hover {
+	color: #FF3F00;
+}
+#footerlink li {
+	padding-left: 15px; /*ボックス内側左の余白*/
+	margin-left: 15px; /*ボックス外側左の余白*/
+	border-left: solid 1px #949495; /*左境界線の一括指定(solidは1本線,線の太さ,線の色)*/
+	display: inline; /*要素の表示形式指定(inlineはインラインレベルで表示)*/
+	list-style-type: none; /*リストマーカーの種類指定(noneはなし)*/
+}
+#footerlink li.first {
+	border-left: none; /*左境界線の一括指定(noneはなし)*/
+}
+/* ----- フッターメニュー ----- */
+
+#footermenu {
+	margin-bottom: 8px; /*ボックス外側下の余白*/
+	text-align: center; /*水平方向の表示位置(centerは中央揃え)*/
+}
+#footermenu li a {
+	color: #333;
+	text-decoration: none;
+}
+#footermenu li a:hover {
+	color: #FF3F00;
+}
+#footermenu li {
+	padding-left: 15px; /*ボックス内側左の余白*/
+	margin-left: 15px; /*ボックス外側左の余白*/
+	border-left: solid 1px #949495; /*左境界線の一括指定(solidは1本線,線の太さ,線の色)*/
+	display: inline; /*要素の表示形式指定(inlineはインラインレベルで表示)*/
+	list-style-type: none; /*リストマーカーの種類指定(noneはなし)*/
+}
+#footermenu li.first {
+	border-left: none; /*左境界線の一括指定(noneはなし)*/
+}
