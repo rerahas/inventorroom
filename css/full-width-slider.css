@@ -2,7 +2,7 @@
 
 /* full-width-slider.css への修正案 */
 .top_slide {
-	margin-left: 250px; /* <-- 修正: 240px から 250px に変更 */
+	margin-left: 0; /* <-- 修正: 240px から 250px に変更 */
 	overflow: hidden;
 }
 
@@ -14,7 +14,7 @@
 	left: 0px;
 	width: 100%;
 	/* <-- 修正: 100%幅に変更 */
-	max-width: 1300px;
+	max-width: 1800px;
 	/* <-- 追加: 最大幅を指定 */
 	height: 300px;
 	overflow: hidden;
@@ -32,10 +32,10 @@
 }
 
 /* スライド内の画像がコンテナに収まるようにする */
-.fws_slides img[u="image"] {
+/* .fws_slides img[u="image"] {
 	width: 100%;
 	height: auto;
-}
+} */
 
 .slider_txtmain {
 	position: absolute;
