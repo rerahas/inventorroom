@@ -1,51 +1,70 @@
 /*トップページスライドショー*/
 
+/* full-width-slider.css への修正案 */
 .top_slide {
-	margin-left: 240px;
+	margin-left: 250px; /* <-- 修正: 240px から 250px に変更 */
 	overflow: hidden;
 }
+
+/* full-width-slider.css への修正案 */
 .slider1_container {
 	position: relative;
 	margin: 0 auto;
 	top: 0px;
 	left: 0px;
-	width: 1300px;
+	width: 100%;
+	/* <-- 修正: 100%幅に変更 */
+	max-width: 1300px;
+	/* <-- 追加: 最大幅を指定 */
 	height: 300px;
 	overflow: hidden;
 }
+
 .fws_slides {
 	cursor: move;
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 1300px;
+	width: 100%;
+	/* <-- 修正: 100%幅に変更 */
 	height: 300px;
 	overflow: hidden;
 }
+
+/* スライド内の画像がコンテナに収まるようにする */
+.fws_slides img[u="image"] {
+	width: 100%;
+	height: auto;
+}
+
 .slider_txtmain {
 	position: absolute;
 	top: 70px;
 	left: 120px;
 	z-index: 200;
 }
+
 .slider_txt1_1 {
 	position: absolute;
 	top: 400px;
 	left: 60px;
 	z-index: 201;
 }
+
 .slider_txt1_2 {
 	position: absolute;
 	top: 400px;
 	left: 150px;
 	z-index: 202;
 }
+
 .slider_txt1_3 {
 	position: absolute;
 	top: 400px;
 	left: 230px;
 	z-index: 203;
 }
+
 .slider_txt2 {
 	position: absolute;
 	bottom: 90px;
@@ -54,23 +73,28 @@
 	height: 50px;
 	line-height: 50px;
 	border-radius: 5px;
-	background:#A1051D;
+	background: #A1051D;
 	text-align: center;
 	font-weight: normal;
 	font-size: 2.5rem;
 	text-decoration: none;
 }
+
 .slider_txt2 a {
 	color: #fff;
 	text-decoration: none;
 }
+
 /* full-width-slider */
 .jssorb21 {
 	position: absolute;
 	bottom: 26px;
 	right: 6px;
 }
-.jssorb21 div, .jssorb21 div:hover, .jssorb21 .av {
+
+.jssorb21 div,
+.jssorb21 div:hover,
+.jssorb21 .av {
 	position: absolute;
 	/* size of bullet elment */
 	width: 19px;
@@ -83,19 +107,27 @@
 	overflow: hidden;
 	cursor: pointer;
 }
+
 .jssorb21 div {
 	background-position: -5px -5px;
 }
-.jssorb21 div:hover, .jssorb21 .av:hover {
+
+.jssorb21 div:hover,
+.jssorb21 .av:hover {
 	background-position: -35px -5px;
 }
+
 .jssorb21 .av {
 	background-position: -65px -5px;
 }
-.jssorb21 .dn, .jssorb21 .dn:hover {
+
+.jssorb21 .dn,
+.jssorb21 .dn:hover {
 	background-position: -95px -5px;
 }
-.jssora21l, .jssora21r {
+
+.jssora21l,
+.jssora21r {
 	display: block;
 	position: absolute;
 	/* size of arrow element */
@@ -105,31 +137,38 @@
 	background: url(../images/top_slide/arrow.png) center center no-repeat;
 	overflow: hidden;
 }
+
 .jssora21l {
 	background-position: -3px -33px;
 	top: 123px;
 	left: 8px;
 }
+
 .jssora21r {
 	background-position: -63px -33px;
 	top: 123px;
 	right: 8px;
 }
+
 .jssora21l:hover {
 	background-position: -123px -33px;
 }
+
 .jssora21r:hover {
 	background-position: -183px -33px;
 }
+
 .jssora21l.jssora21ldn {
 	background-position: -243px -33px;
 }
+
 .jssora21r.jssora21rdn {
 	background-position: -303px -33px;
 }
 
-@media screen and (max-width: 1000px) {
+/* full-width-slider.css への修正案 */
+@media screen and (max-width: 960px) { /* <-- 修正: 1000px から 960px に変更 */
 .top_slide {
-	margin-left: -10px;
+	margin-left: 0; /* <-- 修正: -10px より 0 の方が安全 */
 }
 }

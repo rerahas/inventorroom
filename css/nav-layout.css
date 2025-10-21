@@ -100,7 +100,11 @@
   content: "\f107";
 }
 
-@media only screen and (min-width: 1400px) {
+/* * 修正点 1: デスクトップ表示のブレークポイント
+ * (min-width: 1400px) -> (min-width: 960px) に変更
+ * サイト全体の 960px ブレークポイントに合わせる
+ */
+@media only screen and (min-width: 960px) {
   .nav_right {
     position: fixed;
     top: 0;
@@ -166,7 +170,12 @@
     margin: 0;
   }
 }
-@media only screen and (max-width: 1401px) {
+
+/* * 修正点 2: モバイル表示のブレークポイント
+ * (max-width: 1401px) -> (max-width: 959px) に変更
+ * (min-width: 960px) の反対側を定義
+ */
+@media only screen and (max-width: 959px) {
   .nav {
     width: 250px;
   }
@@ -192,6 +201,11 @@
 }
 
 }
+
+/* * 修正点 3: 既存の 960px ルール（維持）
+ * これは主にモバイル時のヘッダー高さ(50px)に対応する調整
+ * (max-width: 959px) のルールと共存
+ */
 @media only screen and (max-width: 960px) {
   .nav-button {
     position: fixed;
